@@ -662,25 +662,90 @@ export default function Home() {
             style={{
               display: 'flex',
               flexWrap: 'wrap',
-              gap: '0.5rem 2.5rem',
+              gap: '1rem 2.75rem',
               justifyContent: 'center',
               alignItems: 'center',
             }}
           >
-            {OUTLET_STRIP.map((outlet) => (
-              <span
-                key={outlet}
-                style={{
-                  color: 'rgba(255,255,255,0.45)',
-                  fontSize: '0.875rem',
-                  fontWeight: 500,
-                  letterSpacing: '0.04em',
-                  whiteSpace: 'nowrap',
-                }}
-              >
-                {outlet}
-              </span>
-            ))}
+
+            {/* NBC Meet the Press */}
+            <svg height="26" viewBox="0 0 80 26" aria-label="NBC Meet the Press" style={{ opacity: 0.5 }}>
+              <path d="M13 22 Q9 15 11 9 Q13 3 13 7 Q13 3 15 9 Q17 15 13 22Z" fill="white"/>
+              <path d="M13 22 Q9 15 11 9 Q13 3 13 7 Q13 3 15 9 Q17 15 13 22Z" fill="white" transform="rotate(-30 13 22)"/>
+              <path d="M13 22 Q9 15 11 9 Q13 3 13 7 Q13 3 15 9 Q17 15 13 22Z" fill="white" transform="rotate(-60 13 22)"/>
+              <path d="M13 22 Q9 15 11 9 Q13 3 13 7 Q13 3 15 9 Q17 15 13 22Z" fill="white" transform="rotate(30 13 22)"/>
+              <path d="M13 22 Q9 15 11 9 Q13 3 13 7 Q13 3 15 9 Q17 15 13 22Z" fill="white" transform="rotate(60 13 22)"/>
+              <path d="M13 22 Q9 15 11 9 Q13 3 13 7 Q13 3 15 9 Q17 15 13 22Z" fill="white" transform="rotate(90 13 22)"/>
+              <text x="28" y="20" fill="white" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="800" letterSpacing="1.5">NBC</text>
+            </svg>
+
+            {/* CBS News */}
+            <svg height="26" viewBox="0 0 72 26" aria-label="CBS News" style={{ opacity: 0.5 }}>
+              <path d="M2 13 Q13 2 24 13 Q13 24 2 13Z" fill="none" stroke="white" strokeWidth="2"/>
+              <circle cx="13" cy="13" r="4.5" fill="white"/>
+              <circle cx="13" cy="13" r="2" fill="none" stroke="#111827" strokeWidth="1.5"/>
+              <text x="30" y="20" fill="white" fontFamily="Arial, sans-serif" fontSize="14" fontWeight="700" letterSpacing="1">CBS NEWS</text>
+            </svg>
+
+            {/* MLB Network */}
+            <svg height="22" viewBox="0 0 72 22" aria-label="MLB Network" style={{ opacity: 0.5 }}>
+              <text x="0" y="18" fill="white" fontFamily="Arial Black, Arial, sans-serif" fontSize="18" fontWeight="900" letterSpacing="0.5">MLB</text>
+              <text x="44" y="16" fill="white" fontFamily="Arial, sans-serif" fontSize="9" fontWeight="500" letterSpacing="1">NETWORK</text>
+            </svg>
+
+            {/* TIME */}
+            <svg height="24" viewBox="0 0 64 24" aria-label="TIME" style={{ opacity: 0.5 }}>
+              <rect x="0" y="0" width="64" height="24" rx="2" fill="white" opacity="0.15"/>
+              <text x="8" y="19" fill="white" fontFamily="Georgia, Times New Roman, serif" fontSize="18" fontWeight="700" letterSpacing="3">TIME</text>
+            </svg>
+
+            {/* USA Today */}
+            <svg height="24" viewBox="0 0 88 24" aria-label="USA Today" style={{ opacity: 0.5 }}>
+              <circle cx="12" cy="12" r="11" fill="none" stroke="white" strokeWidth="2"/>
+              <circle cx="12" cy="12" r="5" fill="white"/>
+              <text x="28" y="19" fill="white" fontFamily="Arial, sans-serif" fontSize="13" fontWeight="700" letterSpacing="0.5">USA TODAY</text>
+            </svg>
+
+            {/* New York Times */}
+            <svg height="22" viewBox="0 0 148 22" aria-label="New York Times" style={{ opacity: 0.5 }}>
+              <text x="0" y="18" fill="white" fontFamily="Georgia, Times New Roman, serif" fontSize="14" fontWeight="700" letterSpacing="0.3">The New York Times</text>
+            </svg>
+
+            {/* Los Angeles Times */}
+            <svg height="22" viewBox="0 0 140 22" aria-label="Los Angeles Times" style={{ opacity: 0.5 }}>
+              <text x="0" y="18" fill="white" fontFamily="Georgia, Times New Roman, serif" fontSize="14" fontWeight="400" letterSpacing="0.3">Los Angeles Times</text>
+            </svg>
+
+            {/* WNYC */}
+            <svg height="22" viewBox="0 0 60 22" aria-label="WNYC" style={{ opacity: 0.5 }}>
+              <text x="0" y="18" fill="white" fontFamily="Arial, sans-serif" fontSize="18" fontWeight="700" letterSpacing="2">WNYC</text>
+            </svg>
+
+            {/* Harvard */}
+            <svg height="22" viewBox="0 0 90 22" aria-label="Harvard" style={{ opacity: 0.5 }}>
+              <text x="0" y="18" fill="white" fontFamily="Georgia, Times New Roman, serif" fontSize="15" fontWeight="700" letterSpacing="3">HARVARD</text>
+            </svg>
+
+            {/* Axios */}
+            <svg height="22" viewBox="0 0 56 22" aria-label="Axios" style={{ opacity: 0.5 }}>
+              <text x="0" y="18" fill="white" fontFamily="Georgia, Times New Roman, serif" fontSize="18" fontWeight="700" fontStyle="italic" letterSpacing="0.5">Axios</text>
+            </svg>
+
+            {/* Forbes */}
+            <svg height="22" viewBox="0 0 68 22" aria-label="Forbes" style={{ opacity: 0.5 }}>
+              <text x="0" y="18" fill="white" fontFamily="Georgia, Times New Roman, serif" fontSize="18" fontWeight="700" letterSpacing="0.5">Forbes</text>
+            </svg>
+
+            {/* EBONY */}
+            <svg height="22" viewBox="0 0 74 22" aria-label="EBONY" style={{ opacity: 0.5 }}>
+              <text x="0" y="18" fill="white" fontFamily="Arial Black, Arial, sans-serif" fontSize="18" fontWeight="900" letterSpacing="2">EBONY</text>
+            </svg>
+
+            {/* Essence */}
+            <svg height="22" viewBox="0 0 90 22" aria-label="Essence" style={{ opacity: 0.5 }}>
+              <text x="0" y="18" fill="white" fontFamily="Georgia, Times New Roman, serif" fontSize="16" fontWeight="700" letterSpacing="3">ESSENCE</text>
+            </svg>
+
           </div>
         </div>
       </section>
