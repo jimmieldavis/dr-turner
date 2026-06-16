@@ -83,10 +83,9 @@ export default function About() {
             <div className="md:col-span-1">
               <div
                 style={{
-                  position: 'sticky',
                   top: '7rem',
                   aspectRatio: '3/4',
-                  position: 'relative',
+                  position: 'sticky',
                   overflow: 'hidden',
                 }}
               >
