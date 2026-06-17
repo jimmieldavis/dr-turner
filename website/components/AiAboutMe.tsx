@@ -34,7 +34,7 @@ const AI_TOOLS = [
   {
     label: 'Grok',
     href: `https://x.com/i/grok?text=${PROMPT}`,
-    bg: '#111111',
+    bg: '#374151',
     logo: '/images/logos/grok.png',
     invert: false,
   },
