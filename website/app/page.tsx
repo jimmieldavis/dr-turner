@@ -668,7 +668,7 @@ export default function Home() {
             }}
           >
             {[
-              { name: 'NBC Meet the Press', file: 'meet-the-press.png',      url: '/media' },
+              { name: 'NBC Meet the Press', file: 'meet-the-press.png',      url: 'https://www.nbcnews.com/meet-the-press/meet-press-december-31-2023-n1308240' },
               { name: 'CBS News',           file: 'cbs-news.png',            url: 'https://www.cbsnews.com/newyork/video/how-constant-war-coverage-is-fueling-stress-and-anxiety/' },
               { name: 'MLB Network',        file: 'mlb-network.png',         url: 'https://www.mlb.com/video/april-brown-and-shairi-turner-talk-mental-health' },
               { name: 'TIME',               file: 'time-magazine.png',       url: 'https://time.com/7096438/election-stress-crisis-text-line-988/' },
@@ -678,7 +678,7 @@ export default function Home() {
               { name: 'WNYC',              file: 'wnyc.png',                url: '/media' },
               { name: 'Harvard',            file: 'harvard-university.png',  url: '/media' },
               { name: 'Axios',              file: 'axios.png',               url: 'https://www.axios.com/2026/04/20/axios-live-ai-could-support-child-mental-health-with-the-right-guardrails' },
-              { name: 'Forbes',             file: 'forbes-magazine.png',     url: '/media' },
+              { name: 'Forbes',             file: 'forbes-magazine.png',     url: 'https://www.forbes.com/health/mind/suicide-prevention-strategies/' },
               { name: 'EBONY',              file: 'ebony.png',               url: '/media' },
               { name: 'Essence',            file: 'essence.png',             url: '/media' },
             ].map((outlet) => (
