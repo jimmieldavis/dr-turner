@@ -572,7 +572,7 @@ export default function Home() {
         <div className="mx-auto" style={{ maxWidth: '72rem', position: 'relative', zIndex: 2 }}>
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
-              <p className="eyebrow mb-5" style={{ color: 'rgba(255,255,255,0.35)' }}>The Book</p>
+              <p className="eyebrow mb-5" style={{ color: '#C17A56' }}>The Book</p>
               <h2
                 className="font-serif"
                 style={{
