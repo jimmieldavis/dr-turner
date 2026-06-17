@@ -481,7 +481,7 @@ export default function Home() {
                   >
                     {entry.type}
                   </span>
-                  <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.25)' }}>
+                  <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.5)' }}>
                     {entry.year}
                   </span>
                 </div>
@@ -501,15 +501,9 @@ export default function Home() {
                     href={entry.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{
-                      fontSize: '0.75rem',
-                      color: '#C17A56',
-                      textDecoration: 'none',
-                      fontWeight: 500,
-                      letterSpacing: '0.04em',
-                    }}
+                    className="media-card-link"
                   >
-                    View coverage &rarr;
+                    View &rarr;
                   </a>
                 ) : (
                   <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.2)' }}>
