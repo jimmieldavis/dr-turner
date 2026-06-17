@@ -1,3 +1,5 @@
+'use client'
+
 const PROMPT = encodeURIComponent(
   'Tell me about Dr. Shairi Turner based upon drshairi.com. Summarize who she is, who she works for, and what she represents.'
 )
