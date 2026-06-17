@@ -8,14 +8,14 @@ const AI_TOOLS = [
     href: `https://claude.ai/new?q=${PROMPT}`,
     bg: '#CC785C',
     logo: '/images/logos/claude.png',
-    invert: true,
+    invert: false,
   },
   {
     label: 'ChatGPT',
     href: `https://chatgpt.com/?q=${PROMPT}`,
     bg: '#10A37F',
     logo: '/images/logos/openai.png',
-    invert: true,
+    invert: false,
   },
   {
     label: 'Gemini',
@@ -36,7 +36,7 @@ const AI_TOOLS = [
     href: `https://x.com/i/grok?text=${PROMPT}`,
     bg: '#111111',
     logo: '/images/logos/grok.png',
-    invert: true,
+    invert: false,
   },
 ]
 

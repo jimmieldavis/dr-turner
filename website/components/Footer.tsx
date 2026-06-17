@@ -118,12 +118,10 @@ export default function Footer() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.5rem',
-                  border: '1px solid rgba(255,255,255,0.2)',
                   padding: '0.625rem 1.125rem',
                   textDecoration: 'none',
                   transition: 'all 0.2s',
                 }}
-                className="hover:border-white"
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

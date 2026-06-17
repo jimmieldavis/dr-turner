@@ -691,8 +691,7 @@ export default function Home() {
                   height: '24px',
                   width: 'auto',
                   maxWidth: '120px',
-                  filter: 'brightness(0) invert(1)',
-                  opacity: 0.5,
+                  opacity: 0.45,
                   objectFit: 'contain',
                 }}
               />
