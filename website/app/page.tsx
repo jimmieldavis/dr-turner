@@ -41,17 +41,10 @@ export default function Home() {
             style={{
               position: 'absolute',
               inset: 0,
-              background:
-                'linear-gradient(to right, rgba(27,43,75,0) 40%, rgba(27,43,75,0.7) 70%, rgba(27,43,75,1) 100%)',
-              zIndex: 2,
-            }}
-          />
-          <div
-            style={{
-              position: 'absolute',
-              inset: 0,
-              background:
-                'linear-gradient(to top, rgba(27,43,75,0.8) 0%, rgba(27,43,75,0) 40%)',
+              background: [
+                'radial-gradient(ellipse 70% 65% at 42% 38%, rgba(27,43,75,0) 0%, rgba(27,43,75,0.55) 55%, rgba(27,43,75,0.92) 100%)',
+                'linear-gradient(to right, rgba(27,43,75,0) 55%, rgba(27,43,75,0.85) 80%, rgba(27,43,75,1) 100%)',
+              ].join(', '),
               zIndex: 2,
             }}
           />
