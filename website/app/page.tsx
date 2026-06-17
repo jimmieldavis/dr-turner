@@ -668,34 +668,35 @@ export default function Home() {
             }}
           >
             {[
-              { name: 'NBC Meet the Press', file: 'meet-the-press.png' },
-              { name: 'CBS News',           file: 'cbs-news.png' },
-              { name: 'MLB Network',        file: 'mlb-network.png' },
-              { name: 'TIME',               file: 'time-magazine.png' },
-              { name: 'USA Today',          file: 'usa-today.png' },
-              { name: 'New York Times',     file: 'the-new-york-times.png' },
-              { name: 'Los Angeles Times',  file: 'los-angeles-times.png' },
-              { name: 'WNYC',              file: 'wnyc.png' },
-              { name: 'Harvard',            file: 'harvard-university.png' },
-              { name: 'Axios',              file: 'axios.png' },
-              { name: 'Forbes',             file: 'forbes-magazine.png' },
-              { name: 'EBONY',              file: 'ebony.png' },
-              { name: 'Essence',            file: 'essence.png' },
+              { name: 'NBC Meet the Press', file: 'meet-the-press.png',      url: '/media' },
+              { name: 'CBS News',           file: 'cbs-news.png',            url: 'https://www.cbsnews.com/newyork/video/how-constant-war-coverage-is-fueling-stress-and-anxiety/' },
+              { name: 'MLB Network',        file: 'mlb-network.png',         url: 'https://www.mlb.com/video/april-brown-and-shairi-turner-talk-mental-health' },
+              { name: 'TIME',               file: 'time-magazine.png',       url: 'https://time.com/7096438/election-stress-crisis-text-line-988/' },
+              { name: 'USA Today',          file: 'usa-today.png',           url: 'https://www.usatoday.com/story/life/health-wellness/2024/10/28/crisis-lines-election-anxiety/75827309007/' },
+              { name: 'New York Times',     file: 'the-new-york-times.png',  url: '/media' },
+              { name: 'Los Angeles Times',  file: 'los-angeles-times.png',   url: 'https://www.latimes.com/lifestyle/story/2026-03-25/gen-z-loneliness-social-media-tips' },
+              { name: 'WNYC',              file: 'wnyc.png',                url: '/media' },
+              { name: 'Harvard',            file: 'harvard-university.png',  url: '/media' },
+              { name: 'Axios',              file: 'axios.png',               url: 'https://www.axios.com/2026/04/20/axios-live-ai-could-support-child-mental-health-with-the-right-guardrails' },
+              { name: 'Forbes',             file: 'forbes-magazine.png',     url: '/media' },
+              { name: 'EBONY',              file: 'ebony.png',               url: '/media' },
+              { name: 'Essence',            file: 'essence.png',             url: '/media' },
             ].map((outlet) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
+              <a
                 key={outlet.file}
-                src={`/images/logos/${outlet.file}`}
-                alt={outlet.name}
-                style={{
-                  height: '32px',
-                  width: 'auto',
-                  maxWidth: '140px',
-                  filter: 'brightness(0) invert(1)',
-                  opacity: 0.5,
-                  objectFit: 'contain',
-                }}
-              />
+                href={outlet.url}
+                target={outlet.url.startsWith('http') ? '_blank' : undefined}
+                rel={outlet.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="outlet-logo-link"
+                aria-label={outlet.name}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`/images/logos/${outlet.file}`}
+                  alt={outlet.name}
+                  style={{ height: '32px', width: 'auto', maxWidth: '140px', objectFit: 'contain' }}
+                />
+              </a>
             ))}
           </div>
         </div>
