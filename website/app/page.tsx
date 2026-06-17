@@ -635,8 +635,8 @@ export default function Home() {
                 the days you didn&apos;t lose someone. That counting is a kind
                 of prayer.&rdquo;
               </p>
-              <p style={{ color: 'rgba(255,255,255,0.3)', fontSize: '0.8125rem', paddingLeft: '2rem' }}>
-                Dr. Shairi Turner
+              <p style={{ color: '#C17A56', fontSize: '0.8125rem', paddingLeft: '2rem' }}>
+                &mdash; Dr. Shairi Turner
               </p>
             </div>
           </div>
