@@ -46,7 +46,10 @@ export default function Header() {
                 textTransform: 'uppercase',
                 color: 'rgba(255,255,255,0.65)',
                 textDecoration: 'none',
+                transition: 'color 0.2s',
               }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.65)')}
             >
               {item.label}
             </Link>
@@ -122,7 +125,10 @@ export default function Header() {
                 paddingTop: '0.5rem',
                 paddingBottom: '0.5rem',
                 display: 'block',
+                transition: 'color 0.2s',
               }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = '#fff')}
+              onMouseLeave={(e) => (e.currentTarget.style.color = 'rgba(255,255,255,0.65)')}
               onClick={() => setOpen(false)}
             >
               {item.label}
