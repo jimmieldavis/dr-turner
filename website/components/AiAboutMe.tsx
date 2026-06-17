@@ -3,49 +3,19 @@ const PROMPT = encodeURIComponent(
 )
 
 const AI_TOOLS = [
-  {
-    label: 'Claude',
-    href: `https://claude.ai/new?q=${PROMPT}`,
-    bg: '#CC785C',
-    logo: '/images/logos/claude.png',
-    invert: true,
-  },
-  {
-    label: 'ChatGPT',
-    href: `https://chatgpt.com/?q=${PROMPT}`,
-    bg: '#10A37F',
-    logo: '/images/logos/openai-black.png',
-    invert: true,
-  },
-  {
-    label: 'Gemini',
-    href: `https://gemini.google.com/app?q=${PROMPT}`,
-    bg: '#4285F4',
-    logo: '/images/logos/gemini.png',
-    invert: false,
-  },
-  {
-    label: 'Perplexity',
-    href: `https://www.perplexity.ai/search?q=${PROMPT}`,
-    bg: '#1A6B5A',
-    logo: '/images/logos/perplexityai.png',
-    invert: false,
-  },
-  {
-    label: 'Grok',
-    href: `https://x.com/i/grok?text=${PROMPT}`,
-    bg: '#374151',
-    logo: '/images/logos/grok-black.png',
-    invert: true,
-  },
+  { label: 'Claude',      href: `https://claude.ai/new?q=${PROMPT}`,                 logo: '/images/logos/claude.png' },
+  { label: 'ChatGPT',    href: `https://chatgpt.com/?q=${PROMPT}`,                   logo: '/images/logos/openai-black.png' },
+  { label: 'Gemini',     href: `https://gemini.google.com/app?q=${PROMPT}`,          logo: '/images/logos/gemini.png' },
+  { label: 'Perplexity', href: `https://www.perplexity.ai/search?q=${PROMPT}`,       logo: '/images/logos/perplexityai.png' },
+  { label: 'Grok',       href: `https://x.com/i/grok?text=${PROMPT}`,               logo: '/images/logos/grok-black.png' },
 ]
 
 export default function AiAboutMe() {
   return (
     <div style={{ backgroundColor: '#111827' }} className="py-10 px-6">
       <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-          <div className="flex-1">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
+          <div style={{ minWidth: 0, flexShrink: 1 }}>
             <p
               className="eyebrow mb-2"
               style={{ color: 'rgba(255,255,255,0.45)', letterSpacing: '0.1em' }}
@@ -57,7 +27,7 @@ export default function AiAboutMe() {
             </p>
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex gap-5 flex-shrink-0">
             {AI_TOOLS.map((tool) => (
               <a
                 key={tool.label}
@@ -69,17 +39,15 @@ export default function AiAboutMe() {
                   display: 'inline-flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  width: '52px',
-                  height: '52px',
-                  borderRadius: '14px',
-                  backgroundColor: tool.bg,
-                  border: 'none',
+                  width: '36px',
+                  height: '36px',
                   textDecoration: 'none',
                   flexShrink: 0,
-                  transition: 'opacity 0.2s, transform 0.15s',
-                  overflow: 'hidden',
-                  padding: '10px',
+                  opacity: 0.5,
+                  transition: 'opacity 0.2s',
                 }}
+                onMouseEnter={(e) => (e.currentTarget.style.opacity = '1')}
+                onMouseLeave={(e) => (e.currentTarget.style.opacity = '0.5')}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -89,7 +57,7 @@ export default function AiAboutMe() {
                     width: '100%',
                     height: '100%',
                     objectFit: 'contain',
-                    filter: tool.invert ? 'brightness(0) invert(1)' : 'none',
+                    filter: 'brightness(0) invert(1)',
                   }}
                 />
               </a>

@@ -661,10 +661,11 @@ export default function Home() {
           <div
             style={{
               display: 'flex',
-              flexWrap: 'wrap',
-              gap: '1.25rem 2.75rem',
+              flexWrap: 'nowrap',
+              gap: '2rem',
               justifyContent: 'center',
               alignItems: 'center',
+              overflowX: 'auto',
             }}
           >
             {[
