@@ -673,14 +673,12 @@ export default function Home() {
               { name: 'MLB Network',        file: 'mlb-network.png',         url: 'https://www.mlb.com/video/april-brown-and-shairi-turner-talk-mental-health' },
               { name: 'TIME',               file: 'time-magazine.png',       url: 'https://time.com/7096438/election-stress-crisis-text-line-988/' },
               { name: 'USA Today',          file: 'usa-today.png',           url: 'https://www.usatoday.com/story/life/health-wellness/2024/10/28/crisis-lines-election-anxiety/75827309007/' },
-              { name: 'New York Times',     file: 'the-new-york-times.png',  url: '/media' },
               { name: 'Los Angeles Times',  file: 'los-angeles-times.png',   url: 'https://www.latimes.com/lifestyle/story/2026-03-25/gen-z-loneliness-social-media-tips' },
-              { name: 'WNYC',              file: 'wnyc.png',                url: '/media' },
-              { name: 'Harvard',            file: 'harvard-university.png',  url: '/media' },
+              { name: 'Harvard',            file: 'harvard-university.png',  url: 'https://cff.hms.harvard.edu' },
               { name: 'Axios',              file: 'axios.png',               url: 'https://www.axios.com/2026/04/20/axios-live-ai-could-support-child-mental-health-with-the-right-guardrails' },
               { name: 'Forbes',             file: 'forbes-magazine.png',     url: 'https://www.forbes.com/health/mind/suicide-prevention-strategies/' },
-              { name: 'EBONY',              file: 'ebony.png',               url: '/media' },
-              { name: 'Essence',            file: 'essence.png',             url: '/media' },
+              { name: 'EBONY',              file: 'ebony.png',               url: 'https://www.ebony.com/nikes-podcast-no-off-season-mental-health/' },
+              { name: 'Essence',            file: 'essence.png',             url: 'https://www.essence.com/lifestyle/nike-new-mental-health-podcast/' },
             ].map((outlet) => (
               <a
                 key={outlet.file}
