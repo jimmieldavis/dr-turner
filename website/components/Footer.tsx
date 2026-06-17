@@ -127,7 +127,7 @@ export default function Footer() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://logo.clearbit.com/crisistextline.org"
+                  src="/images/logos/crisis-text-line.png"
                   alt="Crisis Text Line"
                   style={{ height: '18px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.7 }}
                 />
