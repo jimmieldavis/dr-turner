@@ -688,9 +688,9 @@ export default function Home() {
                 src={`/images/logos/${outlet.file}`}
                 alt={outlet.name}
                 style={{
-                  height: '24px',
+                  height: '32px',
                   width: 'auto',
-                  maxWidth: '120px',
+                  maxWidth: '140px',
                   filter: 'brightness(0) invert(1)',
                   opacity: 0.5,
                   objectFit: 'contain',
