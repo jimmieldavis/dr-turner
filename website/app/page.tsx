@@ -668,24 +668,24 @@ export default function Home() {
             }}
           >
             {[
-              { name: 'NBC Meet the Press', domain: 'nbcnews.com' },
-              { name: 'CBS News',           domain: 'cbsnews.com' },
-              { name: 'MLB Network',        domain: 'mlb.com' },
-              { name: 'TIME',               domain: 'time.com' },
-              { name: 'USA Today',          domain: 'usatoday.com' },
-              { name: 'New York Times',     domain: 'nytimes.com' },
-              { name: 'Los Angeles Times',  domain: 'latimes.com' },
-              { name: 'WNYC',              domain: 'wnyc.org' },
-              { name: 'Harvard',            domain: 'harvard.edu' },
-              { name: 'Axios',              domain: 'axios.com' },
-              { name: 'Forbes',             domain: 'forbes.com' },
-              { name: 'EBONY',              domain: 'ebony.com' },
-              { name: 'Essence',            domain: 'essence.com' },
+              { name: 'NBC Meet the Press', file: 'meet-the-press.png' },
+              { name: 'CBS News',           file: 'cbs-news.png' },
+              { name: 'MLB Network',        file: 'mlb-network.png' },
+              { name: 'TIME',               file: 'time-magazine.png' },
+              { name: 'USA Today',          file: 'usa-today.png' },
+              { name: 'New York Times',     file: 'the-new-york-times.png' },
+              { name: 'Los Angeles Times',  file: 'los-angeles-times.png' },
+              { name: 'WNYC',              file: 'wnyc.png' },
+              { name: 'Harvard',            file: 'harvard-university.png' },
+              { name: 'Axios',              file: 'axios.png' },
+              { name: 'Forbes',             file: 'forbes-magazine.png' },
+              { name: 'EBONY',              file: 'ebony.png' },
+              { name: 'Essence',            file: 'essence.png' },
             ].map((outlet) => (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                key={outlet.domain}
-                src={`https://logo.clearbit.com/${outlet.domain}`}
+                key={outlet.file}
+                src={`/images/logos/${outlet.file}`}
                 alt={outlet.name}
                 style={{
                   height: '24px',
