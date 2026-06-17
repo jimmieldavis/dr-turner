@@ -16,20 +16,18 @@ export default function AiAboutMe() {
   return (
     <div style={{ backgroundColor: '#111827' }} className="py-10 px-6">
       <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-        <div className="flex flex-col md:flex-row items-start md:items-center gap-3">
-          <div style={{ minWidth: 0, flexShrink: 1 }}>
-            <p
-              className="eyebrow mb-2"
-              style={{ color: 'rgba(255,255,255,0.45)', letterSpacing: '0.1em' }}
-            >
-              Ask AI About Dr. Turner
-            </p>
-            <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', lineHeight: '1.6' }}>
-              Open any AI assistant with a pre-loaded question about Dr. Shairi Turner.
-            </p>
-          </div>
+        <div className="flex flex-col items-center gap-3" style={{ textAlign: 'center' }}>
+          <p
+            className="eyebrow"
+            style={{ color: 'rgba(255,255,255,0.45)', letterSpacing: '0.1em', margin: 0 }}
+          >
+            Ask AI About Dr. Turner
+          </p>
+          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', lineHeight: '1.6', margin: 0 }}>
+            Open any AI assistant with a pre-loaded question about Dr. Shairi Turner.
+          </p>
 
-          <div className="flex gap-5 flex-shrink-0">
+          <div className="flex gap-5">
             {AI_TOOLS.map((tool) => (
               <a
                 key={tool.label}
