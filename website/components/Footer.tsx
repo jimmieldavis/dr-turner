@@ -115,18 +115,22 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
-                  display: 'inline-block',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.5rem',
                   border: '1px solid rgba(255,255,255,0.2)',
-                  color: 'rgba(255,255,255,0.7)',
-                  fontSize: '0.8125rem',
                   padding: '0.625rem 1.125rem',
                   textDecoration: 'none',
-                  letterSpacing: '0.04em',
                   transition: 'all 0.2s',
                 }}
-                className="hover:border-white hover:text-white"
+                className="hover:border-white"
               >
-                Crisis Text Line
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="https://logo.clearbit.com/crisistextline.org"
+                  alt="Crisis Text Line"
+                  style={{ height: '18px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.7 }}
+                />
               </a>
             </div>
           </div>

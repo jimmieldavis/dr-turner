@@ -90,7 +90,7 @@ export default function About() {
                 }}
               >
                 <Image
-                  src="/images/headshot.webp"
+                  src="/images/headshot-2.jpg"
                   alt="Dr. Shairi Turner"
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'center top', mixBlendMode: 'luminosity' }}
@@ -119,7 +119,7 @@ export default function About() {
 
               <p style={{ fontSize: '1.0625rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.65)', marginBottom: '1.5rem' }}>
                 Dr. Shairi Turner grew up in the Bronx, the daughter of Black theater
-                artists. She was adopted. She attended Fieldston, Stanford, Case Western,
+                artists. She attended Fieldston, Stanford, Case Western,
                 Massachusetts General Hospital, and Harvard. She had access to every
                 corridor that medicine opens. She chose the ones where the problems
                 were hardest.
