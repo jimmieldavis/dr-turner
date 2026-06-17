@@ -19,7 +19,7 @@ export default function AiAboutMe() {
         <div className="flex flex-col items-center gap-3" style={{ textAlign: 'center' }}>
           <p
             className="eyebrow"
-            style={{ color: 'rgba(255,255,255,0.45)', letterSpacing: '0.1em', margin: 0 }}
+            style={{ color: '#fff', letterSpacing: '0.1em', margin: 0 }}
           >
             Ask AI About Dr. Turner
           </p>

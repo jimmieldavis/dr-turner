@@ -654,7 +654,7 @@ export default function Home() {
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <p
             className="eyebrow text-center mb-5"
-            style={{ color: 'rgba(255,255,255,0.3)' }}
+            style={{ color: '#fff' }}
           >
             217 media engagements &nbsp;·&nbsp; 2021 to present
           </p>
