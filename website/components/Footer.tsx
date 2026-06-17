@@ -92,7 +92,7 @@ export default function Footer() {
               >
                 Connect
               </p>
-              <div className="flex gap-4 mb-6">
+              <div className="flex gap-4 items-center mb-6">
                 {SOCIAL.map((s) => (
                   <a
                     key={s.label}
@@ -109,27 +109,27 @@ export default function Footer() {
                     {s.icon}
                   </a>
                 ))}
+                <a
+                  href="https://www.crisistextline.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    textDecoration: 'none',
+                    transition: 'opacity 0.2s',
+                    opacity: 0.65,
+                  }}
+                  className="hover:opacity-100"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/logos/crisis-text-line.png"
+                    alt="Crisis Text Line"
+                    style={{ height: '18px', width: 'auto', filter: 'brightness(0) invert(1)' }}
+                  />
+                </a>
               </div>
-              <a
-                href="https://www.crisistextline.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.5rem',
-                  padding: '0.625rem 1.125rem',
-                  textDecoration: 'none',
-                  transition: 'all 0.2s',
-                }}
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/logos/crisis-text-line.png"
-                  alt="Crisis Text Line"
-                  style={{ height: '18px', width: 'auto', filter: 'brightness(0) invert(1)', opacity: 0.7 }}
-                />
-              </a>
             </div>
           </div>
 

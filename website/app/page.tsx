@@ -662,9 +662,10 @@ export default function Home() {
             style={{
               display: 'flex',
               flexWrap: 'nowrap',
-              gap: '1.25rem',
+              gap: '1rem',
               justifyContent: 'center',
               alignItems: 'center',
+              overflow: 'hidden',
             }}
           >
             {[
@@ -692,7 +693,7 @@ export default function Home() {
                 <img
                   src={`/images/logos/${outlet.file}`}
                   alt={outlet.name}
-                  style={{ height: '24px', width: 'auto', maxWidth: '100px', objectFit: 'contain' }}
+                  style={{ height: '20px', width: 'auto', maxWidth: '80px', objectFit: 'contain' }}
                 />
               </a>
             ))}
