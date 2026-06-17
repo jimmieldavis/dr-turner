@@ -207,8 +207,8 @@ h1, h2, h3, h4 {
 }
 
 .outlet-logo-link:hover img {
-  filter: brightness(0) saturate(100%) invert(55%) sepia(45%) saturate(500%) hue-rotate(340deg) brightness(95%);
-  opacity: 0.9;
+  filter: brightness(0) invert(1);
+  opacity: 1;
 }
 
 /* AI block */
