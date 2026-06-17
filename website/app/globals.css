@@ -64,7 +64,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-link:hover {
-  color: var(--terracotta);
+  color: #fff;
 }
 
 /* CTA button primary */

@@ -43,7 +43,7 @@ export default function Home() {
               inset: 0,
               background: [
                 'radial-gradient(ellipse 70% 65% at 42% 38%, rgba(27,43,75,0) 0%, rgba(27,43,75,0.55) 55%, rgba(27,43,75,0.92) 100%)',
-                'linear-gradient(to right, rgba(27,43,75,0) 55%, rgba(27,43,75,0.85) 80%, rgba(27,43,75,1) 100%)',
+                'linear-gradient(to right, rgba(27,43,75,0.9) 0%, rgba(27,43,75,0.3) 18%, rgba(27,43,75,0) 35%, rgba(27,43,75,0) 55%, rgba(27,43,75,0.85) 80%, rgba(27,43,75,1) 100%)',
               ].join(', '),
               zIndex: 2,
             }}
