@@ -20,7 +20,7 @@ const SLIDES: Slide[] = [
     pullQuote:
       "Depression is actually a normal response to a traumatized childhood. It's the mind saying, I can't, I just can't.",
     videoSrc:
-      '/videos/20240529_ZacClarkShow_TheYouthOfAmericaInCrisisSolutionsAndHope[CLIP].mp4',
+      'https://github.com/jimmieldavis/dr-turner-media/raw/refs/heads/main/20240529_ZacClarkShow_TheYouthOfAmericaInCrisisSolutionsAndHope%5BCLIP%5D.mp4',
   },
 ]
 
