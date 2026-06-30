@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Contact() {
@@ -32,28 +33,56 @@ export default function Contact() {
 
   return (
     <>
-      {/* PAGE HEADER */}
-      <section style={{ backgroundColor: '#1B2B4B', padding: '6rem 1.5rem 4rem' }}>
-        <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-          <p className="eyebrow mb-4" style={{ color: 'rgba(255,255,255,0.5)' }}>
-            Contact
-          </p>
-          <h1
-            className="font-serif"
+      {/* TRIPTYCH WRAPPER: spans hero + form sections */}
+      <div style={{ position: 'relative', overflow: 'hidden' }}>
+        {/* Background */}
+        <Image
+          src="/images/drturner_sparkly_ad.png"
+          alt="Dr. Shairi Turner"
+          fill
+          priority
+          style={{ objectFit: 'cover', objectPosition: '25% top' }}
+        />
+        {/* Single unified overlay across both sections */}
+        <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(10,18,35,0.65)', zIndex: 1 }} />
+
+        {/* PAGE HEADER */}
+        <section
+          style={{
+            position: 'relative',
+            zIndex: 2,
+            minHeight: '100vh',
+            display: 'flex',
+            alignItems: 'flex-start',
+          }}
+        >
+          <div
+            className="mx-auto"
             style={{
-              fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
-              color: '#fff',
-              maxWidth: '20ch',
-              lineHeight: 1.1,
+              maxWidth: '72rem',
+              width: '100%',
+              padding: 'clamp(8rem, 14vw, 12rem) clamp(1.5rem, 6vw, 4rem) clamp(4rem, 7vw, 6rem)',
+              position: 'relative',
+              zIndex: 1,
             }}
           >
-            She responds to every inquiry.
-          </h1>
-        </div>
-      </section>
+            <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>Contact</p>
+            <h1
+              className="font-serif"
+              style={{
+                fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
+                color: '#fff',
+                maxWidth: '20ch',
+                lineHeight: 1.1,
+              }}
+            >
+              She responds to<br />every inquiry.
+            </h1>
+          </div>
+        </section>
 
-      {/* FORM */}
-      <section className="section-pad" style={{ backgroundColor: '#0D1B2A' }}>
+        {/* FORM */}
+        <section className="section-pad" style={{ position: 'relative', zIndex: 2 }}>
         <div className="mx-auto px-6" style={{ maxWidth: '72rem' }}>
           <div className="grid md:grid-cols-3 gap-16">
             {/* Left: context */}
@@ -253,6 +282,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
+      </div>
     </>
   )
 }

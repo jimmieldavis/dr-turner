@@ -24,7 +24,7 @@ export default function AiAboutMe() {
             Ask AI About Dr. Turner
           </p>
           <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', lineHeight: '1.6', margin: 0 }}>
-            Open any AI assistant with a pre-loaded question about Dr. Shairi Turner.
+            Open an AI assistant with a pre-loaded prompt about Dr. Shairi Turner.
           </p>
 
           <div className="flex gap-5">

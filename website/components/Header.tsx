@@ -26,8 +26,8 @@ export default function Header() {
         {/* Wordmark */}
         <Link
           href="/"
-          className="font-serif font-semibold text-base tracking-tight"
-          style={{ color: '#fff', textDecoration: 'none', fontSize: '1.0625rem' }}
+          className="font-serif"
+          style={{ color: '#fff', textDecoration: 'none', fontSize: '2rem', fontWeight: 400, letterSpacing: 'normal' }}
         >
           Dr. Shairi Turner
         </Link>
@@ -71,7 +71,7 @@ export default function Header() {
             textDecoration: 'none',
           }}
         >
-          Inquire
+          Book Her
         </Link>
 
         {/* Mobile hamburger */}
@@ -143,15 +143,14 @@ export default function Header() {
               backgroundColor: '#C17A56',
               color: '#fff',
               padding: '0.875rem 1.5rem',
-              fontSize: '0.8125rem',
+              fontSize: '0.75rem',
               fontWeight: 600,
-              letterSpacing: '0.06em',
-              textTransform: 'uppercase',
+              letterSpacing: '0.02em',
               textDecoration: 'none',
             }}
             onClick={() => setOpen(false)}
           >
-            Inquire
+            Book Her
           </Link>
         </nav>
       )}

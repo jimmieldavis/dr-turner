@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import BookingBanner from '@/components/BookingBanner'
 
 export const metadata = {
   title: 'About | Dr. Shairi Turner',
   description:
-    'The career arc, the conviction, and the work of Dr. Shairi Turner, MD, MPH. Chief Health Officer, Crisis Text Line.',
+    'The career arc, the conviction, and the work of Dr. Shairi Turner, Doctor of Medicine, Master of Public Health. Chief Health Officer, Crisis Text Line.',
 }
 
 const CAREER = [
@@ -32,10 +33,10 @@ const CAREER = [
 ]
 
 const EDUCATION = [
-  { degree: 'MPH', school: 'Harvard School of Public Health' },
-  { degree: 'Residency, Internal Medicine', school: 'Massachusetts General Hospital / Harvard' },
-  { degree: 'MD', school: 'Case Western Reserve University School of Medicine' },
-  { degree: 'BS, Biology', school: 'Stanford University' },
+  { degree: 'Master of Public Health', school: 'Harvard School of Public Health' },
+  { degree: 'Residency, Internal Medicine', school: 'Massachusetts General Hospital / Boston Children\'s Hospital', school2: 'Harvard Combined Medicine-Pediatrics Program' },
+  { degree: 'Doctor of Medicine', school: 'Case Western Reserve University School of Medicine' },
+  { degree: 'Bachelor of Science, Biology', school: 'Stanford University' },
   { degree: 'K-12', school: 'The Fieldston School, New York City' },
 ]
 
@@ -55,10 +56,34 @@ const TOPICS = [
 export default function About() {
   return (
     <>
-      {/* PAGE HEADER */}
-      <section style={{ backgroundColor: '#1B2B4B', padding: '6rem 1.5rem 4rem' }}>
-        <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-          <p className="eyebrow mb-4" style={{ color: 'rgba(255,255,255,0.5)' }}>
+      {/* PAGE HEADER: full-bleed photo hero */}
+      <section
+        style={{
+          position: 'relative',
+          overflow: 'hidden',
+          minHeight: '100vh',
+          display: 'flex',
+          alignItems: 'flex-end',
+        }}
+      >
+        <Image
+          src="/images/zac-clark-frames/frame_0502-2.png"
+          alt="Dr. Shairi Turner"
+          fill
+          priority
+          style={{ objectFit: 'cover', objectPosition: 'center bottom' }}
+        />
+        <div
+          className="mx-auto"
+          style={{
+            maxWidth: '72rem',
+            width: '100%',
+            padding: '0 clamp(1.5rem, 6vw, 4rem) clamp(4rem, 7vw, 6rem)',
+            position: 'relative',
+            zIndex: 1,
+          }}
+        >
+          <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>
             About
           </p>
           <h1
@@ -76,29 +101,11 @@ export default function About() {
         </div>
       </section>
 
-      {/* BIO SPLIT: photo left, text right — dark background */}
-      <section style={{ backgroundColor: '#0D1B2A', padding: 'clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 4rem)' }}>
+      {/* BIO: full-width text — dark background */}
+      <section style={{ backgroundColor: '#0D1B2A', padding: '2.5rem clamp(1.5rem, 6vw, 4rem) 2rem' }}>
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-          <div className="grid md:grid-cols-3 gap-16">
-            <div className="md:col-span-1">
-              <div
-                style={{
-                  top: '7rem',
-                  aspectRatio: '3/4',
-                  position: 'sticky',
-                  overflow: 'hidden',
-                }}
-              >
-                <Image
-                  src="/images/headshot-2.jpg"
-                  alt="Dr. Shairi Turner"
-                  fill
-                  style={{ objectFit: 'cover', objectPosition: 'center top', mixBlendMode: 'luminosity' }}
-                />
-              </div>
-            </div>
-
-            <div className="md:col-span-2">
+          <div>
+            <div>
               <p className="eyebrow mb-6" style={{ color: '#C17A56' }}>Who she is</p>
 
               <p
@@ -130,7 +137,20 @@ export default function About() {
                 built a healthcare system for incarcerated youth that did not exist when
                 she arrived. As Deputy Secretary for Health at the Florida Department of
                 Health, she operated at the intersection of policy, clinical care, and
-                political reality. As Chief Health Officer at Crisis Text Line, she
+                political reality.
+              </p>
+
+              <p style={{ fontSize: '1.0625rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.65)', marginBottom: '1.5rem' }}>
+                She came to Crisis Text Line the way she has arrived at every pivotal
+                juncture: through a conversation she wasn&apos;t expecting, in which a
+                Stanford classmate described a crisis service where anyone in the dark
+                could reach a trained counselor — no phone call, no waiting room, no
+                insurance card — and something in her lit up, not as a slow warming
+                but as an ignition.
+              </p>
+
+              <p style={{ fontSize: '1.0625rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.65)', marginBottom: '1.5rem' }}>
+                As Chief Health Officer at Crisis Text Line, she
                 oversees Clinical Supervision, Public Policy, and co-leads U.S.
                 Services, while serving as CTL&apos;s primary voice in national media.
               </p>
@@ -169,7 +189,7 @@ export default function About() {
         style={{
           position: 'relative',
           overflow: 'hidden',
-          padding: 'clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 4rem)',
+          padding: '2rem clamp(1.5rem, 6vw, 4rem)',
         }}
       >
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
@@ -213,8 +233,8 @@ export default function About() {
         </div>
       </section>
 
-      {/* EDUCATION + TOPICS: navy */}
-      <section style={{ backgroundColor: '#1B2B4B', padding: 'clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 4rem)' }}>
+{/* EDUCATION + TOPICS: navy */}
+      <section style={{ backgroundColor: '#1B2B4B', padding: '2rem clamp(1.5rem, 6vw, 4rem)' }}>
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <div className="grid md:grid-cols-2 gap-16">
             <div>
@@ -228,6 +248,11 @@ export default function About() {
                     <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.875rem', marginTop: '0.125rem' }}>
                       {item.school}
                     </p>
+                    {'school2' in item && (
+                      <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.875rem', marginTop: '0.125rem' }}>
+                        {(item as typeof item & { school2: string }).school2}
+                      </p>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -267,46 +292,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* CTA */}
-      <section
-        style={{ backgroundColor: '#C17A56', padding: '5rem 1.5rem', textAlign: 'center' }}
-      >
-        <h2
-          className="font-serif mb-8"
-          style={{ fontSize: 'clamp(1.875rem, 3.5vw, 2.75rem)', color: '#fff' }}
-        >
-          Ready to bring her voice to your audience?
-        </h2>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Link href="/speaking" style={{
-            display: 'inline-block',
-            backgroundColor: '#1B2B4B',
-            color: '#fff',
-            padding: '1rem 2.25rem',
-            fontSize: '0.8125rem',
-            fontWeight: 600,
-            letterSpacing: '0.08em',
-            textTransform: 'uppercase',
-            textDecoration: 'none',
-          }}>
-            Booking Inquiry
-          </Link>
-          <Link href="/contact" style={{
-            display: 'inline-block',
-            backgroundColor: 'transparent',
-            border: '1px solid rgba(255,255,255,0.5)',
-            color: '#fff',
-            padding: '1rem 2.25rem',
-            fontSize: '0.8125rem',
-            fontWeight: 500,
-            letterSpacing: '0.08em',
-            textTransform: 'uppercase',
-            textDecoration: 'none',
-          }}>
-            Media &amp; Press
-          </Link>
-        </div>
-      </section>
+      <BookingBanner />
     </>
   )
 }

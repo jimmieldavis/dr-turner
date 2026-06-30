@@ -4,53 +4,86 @@ import Link from 'next/link'
 export const metadata = {
   title: 'The Book | Dr. Shairi Turner',
   description:
-    'Uncertainty and Hope Can Coexist: Finding True North as a Physician and Mental Health Advocate. The memoir by Dr. Shairi Turner, MD, MPH.',
+    'Uncertainty and Hope Can Coexist: Finding True North as a Physician and Mental Health Advocate. The memoir by Dr. Shairi Turner, Doctor of Medicine, Master of Public Health.',
 }
 
 export default function Book() {
   return (
     <>
-      {/* PAGE HEADER */}
-      <section style={{ backgroundColor: '#1B2B4B', padding: '6rem 1.5rem 5rem' }}>
-        <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-          <p className="eyebrow mb-4" style={{ color: 'rgba(255,255,255,0.5)' }}>
-            The Book
-          </p>
-          <h1
-            className="font-serif"
-            style={{
-              fontSize: 'clamp(2rem, 5vw, 3.5rem)',
-              color: '#fff',
-              fontStyle: 'italic',
-              fontWeight: 400,
-              maxWidth: '18ch',
-              lineHeight: 1.15,
-              marginBottom: '1rem',
-            }}
-          >
-            Uncertainty and Hope Can Coexist
-          </h1>
-          <p
-            style={{
-              fontSize: '1.0625rem',
-              color: 'rgba(255,255,255,0.55)',
-              marginBottom: '3rem',
-              fontStyle: 'italic',
-            }}
-          >
-            Finding True North as a Physician and Mental Health Advocate
-          </p>
-          <p
-            style={{
-              fontSize: '1.125rem',
-              lineHeight: '1.8',
-              color: 'rgba(255,255,255,0.8)',
-              maxWidth: '58ch',
-            }}
-          >
-            A memoir about what it costs to show up, every day, in the hardest rooms
-            in medicine. And what it gives back.
-          </p>
+      {/* PAGE HEADER: book cover showcase */}
+      <section
+        style={{
+          backgroundColor: '#0D1B2A',
+          backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.09) 1.5px, transparent 1.5px)',
+          backgroundSize: '22px 22px',
+          minHeight: '100vh',
+          display: 'flex',
+          alignItems: 'center',
+        }}
+      >
+        <div
+          className="mx-auto"
+          style={{
+            maxWidth: '72rem',
+            width: '100%',
+            padding: '2rem clamp(1.5rem, 6vw, 4rem) clamp(4rem, 7vw, 6rem)',
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 'clamp(3rem, 6vw, 6rem)',
+            flexWrap: 'wrap',
+          }}
+        >
+          {/* Cover image — full, uncropped */}
+          <div style={{ flexShrink: 0, width: 'clamp(360px, 48%, 580px)' }}>
+            <Image
+              src="/images/uncertainty-hope-cover-design-07.png"
+              alt="Uncertainty and Hope Can Coexist — book cover"
+              width={1024}
+              height={1024}
+              priority
+              style={{ width: '100%', height: 'auto', display: 'block' }}
+            />
+          </div>
+
+          {/* Text */}
+          <div style={{ flex: 1, minWidth: '260px' }}>
+            <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>The Book</p>
+            <h1
+              className="font-serif"
+              style={{
+                fontSize: 'clamp(2rem, 4vw, 3.25rem)',
+                color: '#fff',
+                fontStyle: 'italic',
+                fontWeight: 400,
+                lineHeight: 1.15,
+                marginBottom: '0.75rem',
+              }}
+            >
+              Uncertainty and Hope Can Coexist
+            </h1>
+            <p
+              style={{
+                fontSize: '1.0625rem',
+                color: 'rgba(255,255,255,0.5)',
+                fontStyle: 'italic',
+                marginBottom: '2rem',
+                lineHeight: 1.5,
+              }}
+            >
+              Finding True North as a Physician and Mental Health Advocate
+            </p>
+            <p
+              style={{
+                fontSize: '1.0625rem',
+                lineHeight: '1.8',
+                color: 'rgba(255,255,255,0.7)',
+              }}
+            >
+              A memoir about what it costs to show up, every day, in the hardest rooms
+              in medicine. And what it gives back.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -59,65 +92,22 @@ export default function Book() {
         style={{
           position: 'relative',
           overflow: 'hidden',
-          padding: 'clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 4rem)',
+          padding: '2rem clamp(1.5rem, 6vw, 4rem)',
         }}
       >
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
           <Image
-            src="/images/book-journal.jpg"
+            src="/images/book-warm.jpg"
             alt=""
             fill
             style={{ objectFit: 'cover', objectPosition: 'center' }}
           />
-          <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(8,15,28,0.88)' }} />
+          <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(8,15,28,0.78)' }} />
         </div>
 
         <div className="mx-auto" style={{ maxWidth: '72rem', position: 'relative', zIndex: 1 }}>
-          <div className="grid md:grid-cols-2 gap-16 items-start">
-            {/* Cover placeholder */}
-            <div
-              style={{
-                backgroundColor: 'rgba(27,43,75,0.6)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                aspectRatio: '2/3',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                flexDirection: 'column',
-                padding: '3rem',
-                textAlign: 'center',
-              }}
-            >
-              <p
-                className="font-serif"
-                style={{
-                  fontSize: '1.5rem',
-                  color: '#fff',
-                  fontStyle: 'italic',
-                  lineHeight: '1.4',
-                  marginBottom: '2rem',
-                }}
-              >
-                Uncertainty and Hope Can Coexist
-              </p>
-              <div style={{ width: '3rem', height: '1px', backgroundColor: '#C17A56', marginBottom: '2rem' }} />
-              <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.875rem', letterSpacing: '0.08em' }}>
-                DR. SHAIRI TURNER, MD, MPH
-              </p>
-              <p
-                style={{
-                  marginTop: '3rem',
-                  fontSize: '0.75rem',
-                  color: 'rgba(255,255,255,0.2)',
-                  letterSpacing: '0.06em',
-                  textTransform: 'uppercase',
-                }}
-              >
-                Cover art forthcoming
-              </p>
-            </div>
-
-            {/* Text */}
+          <div>
+            {/* Text — full width */}
             <div>
               <p className="eyebrow mb-6" style={{ color: '#C17A56' }}>About the Book</p>
 
@@ -186,7 +176,7 @@ export default function Book() {
       </section>
 
       {/* WHO THIS BOOK IS FOR: navy */}
-      <section style={{ backgroundColor: '#0D1B2A', padding: 'clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 4rem)' }}>
+      <section style={{ backgroundColor: '#0D1B2A', padding: '2rem clamp(1.5rem, 6vw, 4rem)' }}>
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <p className="eyebrow mb-10" style={{ color: 'rgba(255,255,255,0.4)' }}>Who This Book Is For</p>
           <div className="grid md:grid-cols-3 gap-8">
@@ -227,7 +217,7 @@ export default function Book() {
       </section>
 
       {/* MAILING LIST CTA */}
-      <section style={{ backgroundColor: '#C17A56', padding: '5rem 1.5rem', textAlign: 'center' }}>
+      <section style={{ backgroundColor: '#C17A56', padding: '3rem 1.5rem', textAlign: 'center' }}>
         <h2
           className="font-serif mb-4"
           style={{ fontSize: 'clamp(1.875rem, 3.5vw, 2.5rem)', color: '#fff' }}

@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import BookingBanner from '@/components/BookingBanner'
+import RotatingSpotlight from '@/components/RotatingSpotlight'
 
 export const metadata = {
   title: 'Speaking | Dr. Shairi Turner',
@@ -64,31 +66,73 @@ const FORMATS = [
 ]
 
 const PAST = [
+  // Tier 1+ broadcast
   'NBC Meet the Press',
+  // Tier 1 | TV
+  'CBS News',
   'MLB Network',
+  'Scripps News',
+  // Tier 1 | National print / digital
   'TIME Magazine',
   'USA Today',
+  'New York Times',
+  'Los Angeles Times',
+  'CNN',
+  'Forbes',
+  'EBONY',
+  'Essence',
+  'Axios Live',
+  // Tier 1 | Radio / podcast
+  'WNYC / Brian Lehrer Show',
+  'SiriusXM / Mornings with Zerlina',
+  'iHeart Radio / Black Effect Network',
+  'Nike No Off Season Podcast',
+  // Tier 1 | Conference
   'Harvard Center for Suicide Research',
   'HLTH Conference',
+  'CBCF Annual Legislative Conference',
+  'MLB Six Innings Conversation',
+  'Children\'s Miracle Network',
   'Florida State University',
   'Florida A&M University',
-  'Nike / Adelphi University',
-  'WNYC Brian Lehrer Show',
-  'Axios Live',
-  "Children's Miracle Network",
-  'Kaiser Permanente',
-  'Delta Kappa Gamma',
-  'CBCF Annual Legislative Conference',
+  'Adelphi University / Nike / Movember',
+  // Tier 1 | Policy / government
   'U.S. Congress (CTL Briefing)',
+  'TFAH Pain in the Nation Briefing',
 ]
 
 export default function Speaking() {
   return (
     <>
-      {/* PAGE HEADER */}
-      <section style={{ backgroundColor: '#1B2B4B', padding: '6rem 1.5rem 4rem' }}>
-        <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-          <p className="eyebrow mb-4" style={{ color: 'rgba(255,255,255,0.5)' }}>
+      {/* PAGE HEADER: full-bleed photo hero */}
+      <section
+        style={{
+          position: 'relative',
+          overflow: 'hidden',
+          minHeight: '100vh',
+          display: 'flex',
+          alignItems: 'flex-end',
+        }}
+      >
+        <Image
+          src="/images/drturner_axios_20260420.webp"
+          alt=""
+          fill
+          priority
+          style={{ objectFit: 'cover', objectPosition: 'left top' }}
+        />
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(10,18,35,0.15) 0%, rgba(10,18,35,0.45) 50%, rgba(10,18,35,0.75) 100%)', zIndex: 0 }} />
+        <div
+          className="mx-auto"
+          style={{
+            maxWidth: '72rem',
+            width: '100%',
+            padding: '0 clamp(1.5rem, 6vw, 4rem) clamp(4rem, 7vw, 6rem)',
+            position: 'relative',
+            zIndex: 1,
+          }}
+        >
+          <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>
             Speaking
           </p>
           <h1
@@ -103,19 +147,6 @@ export default function Speaking() {
             She brings a room to silence,<br />
             <span style={{ fontStyle: 'italic', fontWeight: 400 }}>then gets them to act.</span>
           </h1>
-          <p
-            style={{
-              marginTop: '2rem',
-              fontSize: '1.0625rem',
-              color: 'rgba(255,255,255,0.65)',
-              maxWidth: '56ch',
-              lineHeight: '1.7',
-            }}
-          >
-            217 media engagements. Congressional briefings. Harvard. MLB Network.
-            Nike advisory panels. She has spoken in rooms that needed a physician
-            and rooms that needed a mother. She is always both.
-          </p>
         </div>
       </section>
 
@@ -124,7 +155,7 @@ export default function Speaking() {
         style={{
           position: 'relative',
           overflow: 'hidden',
-          padding: 'clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 4rem)',
+          padding: '2rem clamp(1.5rem, 6vw, 4rem)',
         }}
       >
         <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
@@ -138,36 +169,54 @@ export default function Speaking() {
         </div>
 
         <div className="mx-auto" style={{ maxWidth: '72rem', position: 'relative', zIndex: 1 }}>
+          <p
+            style={{
+              fontSize: '1.0625rem',
+              color: 'rgba(255,255,255,0.65)',
+              maxWidth: '64ch',
+              lineHeight: '1.7',
+              marginBottom: '3rem',
+            }}
+          >
+            217 media engagements. Congressional briefings. Harvard. MLB Network.
+            Nike advisory panels. She has spoken in rooms that needed a physician, rooms that needed a mother, and rooms that needed a voice for the unheard.
+          </p>
           <p className="eyebrow mb-10" style={{ color: '#C17A56' }}>Signature Topics</p>
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-10">
             {TOPICS.map((topic, i) => (
               <div
                 key={i}
-                className="grid md:grid-cols-3 gap-8 items-start"
-                style={{ paddingBottom: '3rem', borderBottom: '1px solid rgba(255,255,255,0.08)' }}
+                style={{
+                  borderLeft: '2px solid rgba(193,122,86,0.5)',
+                  paddingLeft: '1.5rem',
+                  paddingBottom: '2.5rem',
+                  borderBottom: '1px solid rgba(255,255,255,0.07)',
+                }}
               >
-                <div className="md:col-span-2">
-                  <h2
-                    className="font-serif mb-4"
-                    style={{ fontSize: '1.375rem', color: '#fff', lineHeight: 1.3 }}
-                  >
-                    {topic.title}
-                  </h2>
-                  <p style={{ fontSize: '1rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.6)' }}>
-                    {topic.description}
-                  </p>
-                </div>
-                <div>
-                  <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>
-                    Audiences
-                  </p>
-                  <ul className="flex flex-col gap-2">
-                    {topic.audiences.map((a, j) => (
-                      <li key={j} style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.45)' }}>
-                        {a}
-                      </li>
-                    ))}
-                  </ul>
+                <div className="grid md:grid-cols-3 gap-8 items-start">
+                  <div className="md:col-span-2">
+                    <h2
+                      className="font-serif mb-3"
+                      style={{ fontSize: '1.25rem', color: '#fff', lineHeight: 1.3, fontWeight: 600 }}
+                    >
+                      {topic.title}
+                    </h2>
+                    <p style={{ fontSize: '0.9375rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.6)' }}>
+                      {topic.description}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="eyebrow mb-3" style={{ color: '#C17A56', fontSize: '0.625rem' }}>
+                      Audiences
+                    </p>
+                    <ul className="flex flex-col gap-1">
+                      {topic.audiences.map((a, j) => (
+                        <li key={j} style={{ fontSize: '0.8125rem', color: 'rgba(255,255,255,0.4)' }}>
+                          {a}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             ))}
@@ -175,8 +224,12 @@ export default function Speaking() {
         </div>
       </section>
 
+      <div id="spotlight">
+        <RotatingSpotlight />
+      </div>
+
       {/* FORMATS + PAST STAGES: navy */}
-      <section style={{ backgroundColor: '#0D1B2A', padding: 'clamp(4rem, 8vw, 7rem) clamp(1.5rem, 6vw, 4rem)' }}>
+      <section style={{ backgroundColor: '#0D1B2A', padding: '2rem clamp(1.5rem, 6vw, 4rem)' }}>
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <div className="grid md:grid-cols-2 gap-16">
             <div>
@@ -238,31 +291,7 @@ export default function Speaking() {
         </div>
       </section>
 
-      {/* BOOKING CTA */}
-      <section style={{ backgroundColor: '#C17A56', padding: '5rem 1.5rem', textAlign: 'center' }}>
-        <h2
-          className="font-serif mb-4"
-          style={{ fontSize: 'clamp(1.875rem, 3.5vw, 2.5rem)', color: '#fff' }}
-        >
-          Ready to bring her to your audience?
-        </h2>
-        <p style={{ color: 'rgba(255,255,255,0.75)', fontSize: '1rem', marginBottom: '2rem', maxWidth: '48ch', margin: '0 auto 2rem' }}>
-          Include your event date, format, and audience size. She responds to every inquiry.
-        </p>
-        <Link href="/contact" style={{
-          display: 'inline-block',
-          backgroundColor: '#1B2B4B',
-          color: '#fff',
-          padding: '1rem 2.25rem',
-          fontSize: '0.8125rem',
-          fontWeight: 600,
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          textDecoration: 'none',
-        }}>
-          Submit a Booking Inquiry
-        </Link>
-      </section>
+      <BookingBanner />
     </>
   )
 }
