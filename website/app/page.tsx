@@ -10,7 +10,7 @@ export default function Home() {
       <div style={{ position: 'relative', overflow: 'hidden' }}>
         <Image
           src="/images/drturner_headshot-2.jpg"
-          alt="Dr. Shairi Turner"
+          alt="Dr. Shairi Turner smiling in a close-up portrait"
           fill
           priority
           style={{ objectFit: 'cover', objectPosition: 'center 55%' }}
@@ -43,7 +43,7 @@ export default function Home() {
             zIndex: 1,
           }}
         >
-          <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>
+          <p className="eyebrow mb-4" style={{ color: '#D18A5E' }}>
             Physician &nbsp;|&nbsp; Advocate &nbsp;|&nbsp; Author
           </p>
           <h1
@@ -53,25 +53,12 @@ export default function Home() {
               color: '#fff',
               lineHeight: 1.0,
               fontWeight: 700,
-              marginBottom: '0.25rem',
               letterSpacing: '-0.02em',
-            }}
-          >
-            Dr. Shairi
-          </h1>
-          <h1
-            className="font-serif"
-            style={{
-              fontSize: 'clamp(3rem, 5.5vw, 5.5rem)',
-              color: '#fff',
-              lineHeight: 1.0,
-              fontWeight: 400,
-              fontStyle: 'italic',
               marginBottom: '2.5rem',
-              letterSpacing: '-0.02em',
             }}
           >
-            Turner
+            Dr. Shairi<br />
+            <span style={{ fontWeight: 400, fontStyle: 'italic' }}>Turner</span>
           </h1>
           <p
             style={{
@@ -157,7 +144,7 @@ export default function Home() {
             <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', letterSpacing: '0.08em', fontWeight: 500 }}>
               Dr. Shairi Turner
             </p>
-            <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.8125rem', letterSpacing: '0.04em', fontStyle: 'italic', marginTop: '0.2rem' }}>
+            <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.8125rem', letterSpacing: '0.04em', fontStyle: 'italic', marginTop: '0.2rem' }}>
               Author, Uncertainty and Hope Can Coexist
             </p>
           </div>
@@ -223,7 +210,7 @@ export default function Home() {
           )
           return (
             <div style={{ overflow: 'hidden' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '3rem', width: 'max-content', animation: 'marquee 32s linear infinite' }}>
+              <div className="marquee-track" style={{ display: 'flex', alignItems: 'center', gap: '3rem', width: 'max-content' }}>
                 {MARQUEE_LOGOS.map((item, i) => logoItem(item, i))}
                 {MARQUEE_LOGOS.map((item, i) => logoItem(item, i + MARQUEE_LOGOS.length))}
               </div>
@@ -231,7 +218,7 @@ export default function Home() {
           )
         })()}
         <div style={{ textAlign: 'center', marginTop: '1.25rem' }}>
-          <Link href="/media" style={{ fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#C17A56', textDecoration: 'none' }}>
+          <Link href="/media" style={{ fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#D18A5E', textDecoration: 'none' }}>
             View Full Media Archive (217) &rarr;
           </Link>
         </div>

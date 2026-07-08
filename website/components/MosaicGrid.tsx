@@ -120,7 +120,7 @@ function MosaicCard({ entry }: { entry: MediaEntry }) {
               fontWeight: 600,
               letterSpacing: '0.1em',
               textTransform: 'uppercase',
-              color: '#C17A56',
+              color: '#A3623F',
             }}
           >
             {entry.type}
@@ -211,7 +211,7 @@ export default function MosaicGrid() {
           }}
         >
           <div>
-            <p className="eyebrow" style={{ color: '#C17A56', marginBottom: '0.5rem' }}>
+            <p className="eyebrow" style={{ color: '#A3623F', marginBottom: '0.5rem' }}>
               Coverage
             </p>
             <h2

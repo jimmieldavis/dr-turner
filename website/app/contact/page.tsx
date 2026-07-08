@@ -38,7 +38,7 @@ export default function Contact() {
         {/* Background */}
         <Image
           src="/images/drturner_sparkly_ad.png"
-          alt="Dr. Shairi Turner"
+          alt="Dr. Shairi Turner smiling in a formal black evening gown at an event"
           fill
           priority
           style={{ objectFit: 'cover', objectPosition: '25% top' }}
@@ -66,7 +66,7 @@ export default function Contact() {
               zIndex: 1,
             }}
           >
-            <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>Contact</p>
+            <p className="eyebrow mb-4" style={{ color: '#D18A5E' }}>Contact</p>
             <h1
               className="font-serif"
               style={{
@@ -86,14 +86,14 @@ export default function Contact() {
         <div className="mx-auto px-6" style={{ maxWidth: '72rem' }}>
           <div className="grid md:grid-cols-3 gap-16">
             {/* Left: context */}
-            <div>
-              <p className="eyebrow mb-6" style={{ color: '#C17A56' }}>Inquiry Types</p>
+            <div style={{ marginTop: '-192px' }}>
+              <p className="eyebrow mb-6" style={{ color: '#D18A5E' }}>Inquiry Types</p>
               <div className="flex flex-col gap-6">
                 {[
                   {
                     label: 'Speaking',
                     detail:
-                      'Include your event date, format (keynote, panel, fireside), expected audience size, and context (CTL capacity or personal capacity).',
+                      'Include your event date, format (keynote, panel, fireside), expected audience size, and context (Crisis Text Line capacity or personal capacity).',
                   },
                   {
                     label: 'Media & Press',
@@ -115,10 +115,10 @@ export default function Contact() {
                     key={item.label}
                     style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '1.25rem' }}
                   >
-                    <p style={{ fontWeight: 500, color: '#fff', marginBottom: '0.375rem' }}>
+                    <p style={{ fontSize: '1.375rem', fontWeight: 500, color: '#fff', marginBottom: '0.375rem' }}>
                       {item.label}
                     </p>
-                    <p style={{ fontSize: '0.875rem', color: 'rgba(255,255,255,0.45)', lineHeight: '1.65' }}>
+                    <p style={{ fontSize: '1.1875rem', color: 'rgba(255,255,255,0.45)', lineHeight: '1.65' }}>
                       {item.detail}
                     </p>
                   </div>
@@ -126,9 +126,9 @@ export default function Contact() {
               </div>
 
               <div style={{ marginTop: '3rem', borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '1.5rem' }}>
-                <p style={{ fontSize: '0.8125rem', color: 'rgba(255,255,255,0.35)', lineHeight: '1.65' }}>
+                <p style={{ fontSize: '0.8125rem', color: 'rgba(255,255,255,0.65)', lineHeight: '1.65' }}>
                   In crisis? Do not use this form. Text{' '}
-                  <strong style={{ color: '#C17A56' }}>HOME or HOLA to 741741</strong>{' '}
+                  <strong style={{ color: '#D18A5E' }}>HOME or HOLA to 741741</strong>{' '}
                   to reach a live volunteer Crisis Counselor.
                 </p>
               </div>
@@ -159,12 +159,14 @@ export default function Contact() {
                 <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
                   {/* Inquiry type */}
                   <div>
-                    <label className="form-label" style={{ color: 'rgba(255,255,255,0.4)' }}>Inquiry type *</label>
-                    <div className="flex flex-wrap gap-3 mt-2">
+                    <label className="form-label" id="inquiry-type-label" style={{ color: 'rgba(255,255,255,0.8)' }}>Inquiry type *</label>
+                    <div className="flex flex-wrap gap-3 mt-2" role="radiogroup" aria-labelledby="inquiry-type-label">
                       {['Speaking', 'Media & Press', 'Book', 'General'].map((t) => (
                         <button
                           key={t}
                           type="button"
+                          role="radio"
+                          aria-checked={type === t}
                           onClick={() => setType(t)}
                           style={{
                             padding: '0.5rem 1.25rem',
@@ -172,7 +174,7 @@ export default function Contact() {
                             borderColor: type === t ? '#C17A56' : 'rgba(255,255,255,0.2)',
                             backgroundColor: type === t ? '#C17A56' : 'transparent',
                             color: '#fff',
-                            fontSize: '0.8125rem',
+                            fontSize: '1.125rem',
                             fontWeight: 500,
                             cursor: 'pointer',
                             letterSpacing: '0.04em',
@@ -188,7 +190,7 @@ export default function Contact() {
 
                   {/* Name */}
                   <div>
-                    <label className="form-label" htmlFor="name" style={{ color: 'rgba(255,255,255,0.4)' }}>Full name *</label>
+                    <label className="form-label" htmlFor="name" style={{ color: 'rgba(255,255,255,0.8)' }}>Full name *</label>
                     <input
                       id="name"
                       name="name"
@@ -202,7 +204,7 @@ export default function Contact() {
 
                   {/* Email */}
                   <div>
-                    <label className="form-label" htmlFor="email" style={{ color: 'rgba(255,255,255,0.4)' }}>Email *</label>
+                    <label className="form-label" htmlFor="email" style={{ color: 'rgba(255,255,255,0.8)' }}>Email *</label>
                     <input
                       id="email"
                       name="email"
@@ -216,7 +218,7 @@ export default function Contact() {
 
                   {/* Organization */}
                   <div>
-                    <label className="form-label" htmlFor="organization" style={{ color: 'rgba(255,255,255,0.4)' }}>Organization</label>
+                    <label className="form-label" htmlFor="organization" style={{ color: 'rgba(255,255,255,0.8)' }}>Organization</label>
                     <input
                       id="organization"
                       name="organization"
@@ -229,7 +231,7 @@ export default function Contact() {
 
                   {/* Message */}
                   <div>
-                    <label className="form-label" htmlFor="message" style={{ color: 'rgba(255,255,255,0.4)' }}>Details *</label>
+                    <label className="form-label" htmlFor="message" style={{ color: 'rgba(255,255,255,0.8)' }}>Details *</label>
                     <textarea
                       id="message"
                       name="message"
@@ -248,7 +250,7 @@ export default function Contact() {
                   </div>
 
                   {status === 'error' && (
-                    <p style={{ color: '#C17A56', fontSize: '0.875rem' }}>
+                    <p style={{ color: '#D18A5E', fontSize: '0.875rem' }}>
                       Something went wrong. Please try again or email directly.
                     </p>
                   )}
@@ -273,7 +275,7 @@ export default function Contact() {
                     {status === 'sending' ? 'Sending...' : 'Submit Inquiry'}
                   </button>
 
-                  <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.2)' }}>
+                  <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.65)' }}>
                     This form is powered by Formspree. Your information will not be shared or sold.
                   </p>
                 </form>

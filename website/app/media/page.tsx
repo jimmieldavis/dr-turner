@@ -23,8 +23,8 @@ export default function Media() {
         }}
       >
         <Image
-          src="/images/mlb-frames/frame_015.png"
-          alt=""
+          src="/images/mlb-frames/frame_064.png"
+          alt="Dr. Shairi Turner smiling during a televised interview on MLB Now"
           fill
           priority
           style={{ objectFit: 'cover', objectPosition: 'center center' }}
@@ -39,7 +39,7 @@ export default function Media() {
             zIndex: 1,
           }}
         >
-          <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>Media</p>
+          <p className="eyebrow mb-4" style={{ color: '#D18A5E', marginTop: '48px' }}>Media</p>
           <h1
             className="font-serif"
             style={{
@@ -68,11 +68,11 @@ export default function Media() {
               <div key={stat.label}>
                 <p
                   className="font-serif"
-                  style={{ fontSize: '2.5rem', color: '#C17A56', lineHeight: 1, fontWeight: 700 }}
+                  style={{ fontSize: '2.5rem', color: '#D18A5E', lineHeight: 1, fontWeight: 700 }}
                 >
                   {stat.num}
                 </p>
-                <p style={{ fontSize: '0.8125rem', color: 'rgba(255,255,255,0.5)', marginTop: '0.375rem' }}>
+                <p style={{ fontSize: '0.9375rem', color: 'rgba(255,255,255,0.5)', marginTop: '0.375rem' }}>
                   {stat.label}
                 </p>
               </div>
@@ -84,7 +84,7 @@ export default function Media() {
       {/* FULL ARCHIVE LINK */}
       <section style={{ backgroundColor: '#C17A56', padding: '1.25rem 1.5rem' }}>
         <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-4" style={{ maxWidth: '72rem' }}>
-          <p style={{ color: '#fff', fontSize: '0.9375rem' }}>
+          <p style={{ color: '#fff', fontSize: '1.0625rem' }}>
             The interactive archive with all 217 entries, filters, and a geographic map is live at the media tracker.
           </p>
           <a
@@ -94,7 +94,7 @@ export default function Media() {
             style={{
               display: 'inline-block',
               backgroundColor: '#fff',
-              color: '#C17A56',
+              color: '#A3623F',
               padding: '0.625rem 1.5rem',
               fontSize: '0.8125rem',
               fontWeight: 500,
@@ -134,7 +134,7 @@ export default function Media() {
         </div>
 
         <div className="mx-auto" style={{ maxWidth: '72rem', position: 'relative', zIndex: 1 }}>
-          <p className="eyebrow mb-10" style={{ color: '#C17A56' }}>Flagship Appearances</p>
+          <p className="eyebrow mb-10" style={{ color: '#D18A5E' }}>Flagship Appearances</p>
 
           <div
             style={{
@@ -183,13 +183,13 @@ export default function Media() {
               )?.[1] || null
 
               const LOGO_HEIGHTS: Record<string, number> = {
-                'time-magazine.png': 16, 'cmn.svg': 32, 'nike.svg': 13, 'hlth.svg': 16,
-                'usa-today.png': 34, 'mlb-network.png': 34, 'harvard-university.png': 27, 'cbs-news.png': 24,
-                'famu.svg': 22, 'fsu.svg': 22,
-                'forbes-magazine.png': 16, 'ebony.png': 16, 'essence.png': 16,
-                'meet-the-press.png': 30, 'livefree999.svg': 48,
+                'time-magazine.png': 21, 'cmn.svg': 42, 'nike.svg': 17, 'hlth.svg': 21,
+                'usa-today.png': 44, 'mlb-network.png': 44, 'harvard-university.png': 35, 'cbs-news.png': 31,
+                'famu.svg': 29, 'fsu.svg': 29,
+                'forbes-magazine.png': 21, 'ebony.png': 21, 'essence.png': 21,
+                'meet-the-press.png': 39, 'livefree999.svg': 62,
               }
-              const logoHeight = logoFile ? (LOGO_HEIGHTS[logoFile] ?? 22) : 22
+              const logoHeight = logoFile ? (LOGO_HEIGHTS[logoFile] ?? 29) : 29
 
               const metaParts = [entry.type, entry.year, entry.city && entry.city !== 'National' ? entry.city : null].filter(Boolean)
 
@@ -240,11 +240,11 @@ export default function Media() {
                     ) : (
                       <span
                         style={{
-                          fontSize: '0.625rem',
+                          fontSize: '0.75rem',
                           fontWeight: 700,
                           letterSpacing: '0.1em',
                           textTransform: 'uppercase',
-                          color: 'rgba(255,255,255,0.4)',
+                          color: 'rgba(255,255,255,0.65)',
                           flexShrink: 0,
                         }}
                       >
@@ -253,8 +253,8 @@ export default function Media() {
                     )}
                     <span
                       style={{
-                        fontSize: '0.6875rem',
-                        color: 'rgba(255,255,255,0.3)',
+                        fontSize: '0.9375rem',
+                        color: '#fff',
                         letterSpacing: '0.04em',
                         whiteSpace: 'nowrap',
                       }}
@@ -270,7 +270,7 @@ export default function Media() {
                     <span dangerouslySetInnerHTML={{ __html: entry.title || entry.outlet }} />
                   </p>
 
-                  <p style={{ fontSize: '0.875rem', lineHeight: '1.65', color: 'rgba(255,255,255,0.5)', flex: 1 }}>
+                  <p style={{ fontSize: '1.0625rem', lineHeight: '1.65', color: 'rgba(255,255,255,0.5)', flex: 1 }}>
                     {entry.description}
                   </p>
 
@@ -284,7 +284,7 @@ export default function Media() {
                       {entry.type === 'TV' || entry.type === 'Panel' ? 'Watch' : entry.type === 'Radio' ? 'Listen' : 'Read'} &rarr;
                     </a>
                   ) : (
-                    <span style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.2)' }}>
+                    <span style={{ fontSize: '0.8125rem', color: 'rgba(255,255,255,0.65)' }}>
                       {entry.city}
                     </span>
                   )}

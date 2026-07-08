@@ -79,6 +79,8 @@ export default function Header() {
           className="md:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
+          aria-expanded={open}
+          aria-controls="mobile-nav"
         >
           <span
             className="block w-6 h-px transition-all"
@@ -107,6 +109,7 @@ export default function Header() {
       {/* Mobile menu */}
       {open && (
         <nav
+          id="mobile-nav"
           className="md:hidden px-6 pb-6 flex flex-col gap-4"
           style={{ borderTop: '1px solid rgba(255,255,255,0.08)', backgroundColor: '#0D1B2A' }}
         >

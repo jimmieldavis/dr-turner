@@ -47,7 +47,7 @@ export default function WhatTheySaid() {
       }}
     >
       <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-        <p className="eyebrow mb-12" style={{ color: '#C17A56' }}>
+        <p className="eyebrow mb-12" style={{ color: '#D18A5E' }}>
           What They Said
         </p>
 
@@ -93,7 +93,7 @@ export default function WhatTheySaid() {
               <p style={{ fontSize: '0.875rem', fontWeight: 600, color: '#fff', lineHeight: 1.2 }}>
                 {HERO_QUOTE.name}
               </p>
-              <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.4)', marginTop: '0.125rem' }}>
+              <p style={{ fontSize: '0.75rem', color: 'rgba(255,255,255,0.65)', marginTop: '0.125rem' }}>
                 {HERO_QUOTE.role}
               </p>
             </div>
@@ -128,7 +128,7 @@ export default function WhatTheySaid() {
               <p style={{ fontSize: '0.8125rem', fontWeight: 600, color: 'rgba(255,255,255,0.5)' }}>
                 {q.name}
               </p>
-              <p style={{ fontSize: '0.6875rem', color: 'rgba(255,255,255,0.3)', marginTop: '0.125rem' }}>
+              <p style={{ fontSize: '0.6875rem', color: 'rgba(255,255,255,0.65)', marginTop: '0.125rem' }}>
                 {q.role}
               </p>
             </div>

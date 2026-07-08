@@ -14,7 +14,7 @@ const CAREER = [
     org: 'Crisis Text Line',
     period: '2021 to present',
     note:
-      "Oversees Clinical Supervision, Public Policy, and co-leads U.S. Services. CTL's primary external spokesperson. 12.4 million media impressions in a single 2024 satellite media tour.",
+      "Oversees Clinical Supervision, Public Policy, and co-leads U.S. Services. Crisis Text Line's primary external spokesperson. 12.4 million media impressions in a single 2024 satellite media tour.",
   },
   {
     role: 'Deputy Secretary for Health',
@@ -68,7 +68,7 @@ export default function About() {
       >
         <Image
           src="/images/zac-clark-frames/frame_0502-2.png"
-          alt="Dr. Shairi Turner"
+          alt="Dr. Shairi Turner speaking and gesturing during a podcast recording"
           fill
           priority
           style={{ objectFit: 'cover', objectPosition: 'center bottom' }}
@@ -83,7 +83,7 @@ export default function About() {
             zIndex: 1,
           }}
         >
-          <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>
+          <p className="eyebrow mb-4" style={{ color: '#D18A5E' }}>
             About
           </p>
           <h1
@@ -106,17 +106,9 @@ export default function About() {
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <div>
             <div>
-              <p className="eyebrow mb-6" style={{ color: '#C17A56' }}>Who she is</p>
+              <p className="eyebrow mb-6" style={{ color: '#D18A5E' }}>Who she is</p>
 
-              <p
-                style={{
-                  fontSize: '1.25rem',
-                  lineHeight: '1.75',
-                  color: 'rgba(255,255,255,0.85)',
-                  fontWeight: 300,
-                  marginBottom: '2rem',
-                }}
-              >
+              <p style={{ fontSize: '1.0625rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.65)', marginBottom: '1.5rem' }}>
                 There was no five-year plan. A dog bite as a child planted a seed
                 that eventually led her to medicine. A phone call about a young
                 man dying in a Florida jail cell redirected a clinical career into
@@ -152,7 +144,7 @@ export default function About() {
               <p style={{ fontSize: '1.0625rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.65)', marginBottom: '1.5rem' }}>
                 As Chief Health Officer at Crisis Text Line, she
                 oversees Clinical Supervision, Public Policy, and co-leads U.S.
-                Services, while serving as CTL&apos;s primary voice in national media.
+                Services, while serving as Crisis Text Line&apos;s primary voice in national media.
               </p>
 
               <blockquote
@@ -203,7 +195,7 @@ export default function About() {
         </div>
 
         <div className="mx-auto" style={{ maxWidth: '72rem', position: 'relative', zIndex: 1 }}>
-          <p className="eyebrow mb-10" style={{ color: '#C17A56' }}>Career Arc</p>
+          <p className="eyebrow mb-10" style={{ color: '#D18A5E' }}>Career Arc</p>
           <div className="flex flex-col gap-8">
             {CAREER.map((item, i) => (
               <div
@@ -212,7 +204,7 @@ export default function About() {
                 style={{ paddingBottom: '2rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}
               >
                 <div>
-                  <p style={{ fontSize: '0.8125rem', color: '#C17A56', fontWeight: 500, marginBottom: '0.25rem' }}>
+                  <p style={{ fontSize: '0.8125rem', color: '#D18A5E', fontWeight: 500, marginBottom: '0.25rem' }}>
                     {item.period}
                   </p>
                   <p className="font-serif" style={{ fontSize: '1.0625rem', color: '#fff' }}>
@@ -238,18 +230,18 @@ export default function About() {
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <div className="grid md:grid-cols-2 gap-16">
             <div>
-              <p className="eyebrow mb-8" style={{ color: 'rgba(255,255,255,0.4)' }}>Education</p>
+              <p className="eyebrow mb-8" style={{ color: 'rgba(255,255,255,0.65)' }}>Education</p>
               <ul className="flex flex-col gap-4">
                 {EDUCATION.map((item, i) => (
                   <li key={i} style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '1rem' }}>
                     <p style={{ fontWeight: 500, color: '#fff', fontSize: '0.9375rem' }}>
                       {item.degree}
                     </p>
-                    <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.875rem', marginTop: '0.125rem' }}>
+                    <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', marginTop: '0.125rem' }}>
                       {item.school}
                     </p>
                     {'school2' in item && (
-                      <p style={{ color: 'rgba(255,255,255,0.45)', fontSize: '0.875rem', marginTop: '0.125rem' }}>
+                      <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.875rem', marginTop: '0.125rem' }}>
                         {(item as typeof item & { school2: string }).school2}
                       </p>
                     )}
@@ -259,7 +251,7 @@ export default function About() {
             </div>
 
             <div>
-              <p className="eyebrow mb-8" style={{ color: 'rgba(255,255,255,0.4)' }}>Topics She Owns</p>
+              <p className="eyebrow mb-8" style={{ color: 'rgba(255,255,255,0.65)' }}>Topics She Owns</p>
               <ul className="flex flex-col gap-3">
                 {TOPICS.map((topic, i) => (
                   <li

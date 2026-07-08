@@ -7,10 +7,39 @@
 :root {
   --navy: #1B2B4B;
   --terracotta: #C17A56;
+  --terracotta-text: #D18A5E;
   --cream: #F9F7F4;
   --charcoal: #1A1A1A;
   --warmgray: #6B6B6B;
   --lightgray: #E8E6E3;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  color: var(--charcoal);
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[role="radio"]:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--terracotta-text);
+  outline-offset: 2px;
 }
 
 html {
@@ -110,11 +139,11 @@ h1, h2, h3, h4 {
 /* Eyebrow label */
 .eyebrow {
   font-family: 'Inter', sans-serif;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-size: 0.8125rem;
+  font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--terracotta);
+  color: var(--terracotta-text);
 }
 
 /* Pull quote */
@@ -167,7 +196,7 @@ h1, h2, h3, h4 {
   border-bottom: 1px solid var(--lightgray);
   padding: 0.75rem 0;
   font-family: 'Inter', sans-serif;
-  font-size: 0.9375rem;
+  font-size: 1.0625rem;
   color: var(--charcoal);
   outline: none;
   transition: border-color 0.2s;
@@ -178,12 +207,12 @@ h1, h2, h3, h4 {
 }
 
 .form-input::placeholder {
-  color: var(--warmgray);
+  color: rgba(255,255,255,0.65);
 }
 
 /* Form label */
 .form-label {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -227,10 +256,18 @@ h1, h2, h3, h4 {
   opacity: 1 !important;
 }
 
+.media-logo-link .logo-fallback-text {
+  transition: color 0.2s ease;
+}
+
+.media-logo-link:hover .logo-fallback-text {
+  color: rgba(255,255,255,0.85) !important;
+}
+
 /* Media card link */
 .media-card-link {
-  font-size: 0.75rem;
-  color: #C17A56;
+  font-size: 1.0625rem;
+  color: var(--terracotta-text);
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 0.04em;
@@ -260,8 +297,8 @@ h1, h2, h3, h4 {
 }
 
 .mosaic-link:hover {
-  color: #C17A56;
-  border-bottom-color: #C17A56;
+  color: var(--terracotta-text);
+  border-bottom-color: var(--terracotta-text);
 }
 
 /* Rotating spotlight: portrait layout stacks on mobile */
@@ -307,4 +344,14 @@ h1, h2, h3, h4 {
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 32s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
 }

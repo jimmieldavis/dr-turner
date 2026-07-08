@@ -48,7 +48,7 @@ export default function Book() {
 
           {/* Text */}
           <div style={{ flex: 1, minWidth: '260px' }}>
-            <p className="eyebrow mb-4" style={{ color: '#C17A56' }}>The Book</p>
+            <p className="eyebrow mb-4" style={{ color: '#D18A5E' }}>The Book</p>
             <h1
               className="font-serif"
               style={{
@@ -109,7 +109,7 @@ export default function Book() {
           <div>
             {/* Text — full width */}
             <div>
-              <p className="eyebrow mb-6" style={{ color: '#C17A56' }}>About the Book</p>
+              <p className="eyebrow mb-6" style={{ color: '#D18A5E' }}>About the Book</p>
 
               <p
                 style={{
@@ -178,7 +178,7 @@ export default function Book() {
       {/* WHO THIS BOOK IS FOR: navy */}
       <section style={{ backgroundColor: '#0D1B2A', padding: '2rem clamp(1.5rem, 6vw, 4rem)' }}>
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-          <p className="eyebrow mb-10" style={{ color: 'rgba(255,255,255,0.4)' }}>Who This Book Is For</p>
+          <h2 className="eyebrow mb-10" style={{ color: 'rgba(255,255,255,0.65)' }}>Who This Book Is For</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {

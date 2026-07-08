@@ -52,7 +52,7 @@ export default function Footer() {
                 Physician. Mental Health Advocate.<br />
                 Chief Health Officer, Crisis Text Line.
               </p>
-              <p className="mt-4 text-sm" style={{ color: 'rgba(255,255,255,0.45)' }}>
+              <p className="mt-4 text-sm" style={{ color: 'rgba(255,255,255,0.65)' }}>
                 In crisis? Text HOME to 741741.
               </p>
             </div>
@@ -61,7 +61,7 @@ export default function Footer() {
             <div>
               <p
                 className="eyebrow mb-4"
-                style={{ color: 'rgba(255,255,255,0.4)' }}
+                style={{ color: 'rgba(255,255,255,0.65)' }}
               >
                 Pages
               </p>
@@ -84,11 +84,11 @@ export default function Footer() {
               </nav>
             </div>
 
-            {/* Social + CTL column */}
+            {/* Social + Crisis Text Line column */}
             <div>
               <p
                 className="eyebrow mb-4"
-                style={{ color: 'rgba(255,255,255,0.4)' }}
+                style={{ color: 'rgba(255,255,255,0.65)' }}
               >
                 Connect
               </p>
@@ -137,10 +137,10 @@ export default function Footer() {
             style={{ borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem' }}
             className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4"
           >
-            <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.8125rem' }}>
+            <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.8125rem' }}>
               &copy; {new Date().getFullYear()} Dr. Shairi Turner. All rights reserved.
             </p>
-            <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '0.8125rem' }}>
+            <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.8125rem' }}>
               drshairi.com
             </p>
           </div>

@@ -23,7 +23,7 @@ export default function AiAboutMe() {
           >
             Ask AI About Dr. Turner
           </p>
-          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', lineHeight: '1.6', margin: 0 }}>
+          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '1rem', lineHeight: '1.6', margin: 0 }}>
             Open an AI assistant with a pre-loaded prompt about Dr. Shairi Turner.
           </p>
 

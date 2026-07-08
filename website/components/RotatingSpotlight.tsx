@@ -66,7 +66,16 @@ export default function RotatingSpotlight() {
     <section
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
-      style={{ backgroundColor: '#080F1C', position: 'relative', overflow: 'hidden' }}
+      onFocus={() => setPaused(true)}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget as Node)) setPaused(false)
+      }}
+      style={{
+        backgroundColor: '#080F1C',
+        position: 'relative',
+        overflow: 'hidden',
+        padding: 'clamp(2.5rem, 6vw, 4rem) 0',
+      }}
       aria-label="Featured appearances"
     >
       {/* Background texture image */}
@@ -116,13 +125,13 @@ export default function RotatingSpotlight() {
         >
           {/* Section label + meta */}
           <div>
-            <p className="eyebrow" style={{ color: '#C17A56', marginBottom: '0.75rem' }}>
+            <p className="eyebrow" style={{ color: '#D18A5E', marginBottom: '0.75rem' }}>
               In the Room
             </p>
             <p
               style={{
                 fontSize: '0.75rem',
-                color: 'rgba(255,255,255,0.4)',
+                color: 'rgba(255,255,255,0.65)',
                 letterSpacing: '0.06em',
               }}
             >
@@ -168,7 +177,7 @@ export default function RotatingSpotlight() {
               style={{
                 marginTop: '0.75rem',
                 fontSize: '0.75rem',
-                color: '#C17A56',
+                color: '#D18A5E',
                 letterSpacing: '0.06em',
                 fontStyle: 'normal',
               }}
@@ -227,7 +236,7 @@ export default function RotatingSpotlight() {
               <p
                 style={{
                   fontSize: '0.6875rem',
-                  color: 'rgba(255,255,255,0.25)',
+                  color: 'rgba(255,255,255,0.65)',
                   letterSpacing: '0.08em',
                   fontVariantNumeric: 'tabular-nums',
                 }}
@@ -255,6 +264,7 @@ export default function RotatingSpotlight() {
             key={slide.id}
             src={slide.videoSrc}
             poster="/images/zac-clark-frames/frame_poster.jpg"
+            aria-label={`${slide.outlet}: ${slide.headline}`}
             controls
             controlsList="nodownload nofullscreen"
             preload="none"

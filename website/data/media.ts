@@ -70,7 +70,7 @@ export const FEATURED_MEDIA: MediaEntry[] = [
     city: 'National',
     url: 'https://youtu.be/_HDB6pslwkM',
     description:
-      'Live segment with April Brown, SVP at Major League Baseball, on nationally televised MLB Network. Youth athlete mental health and the CTL-MLB Partnership.',
+      'Live segment with April Brown, SVP at Major League Baseball, on nationally televised MLB Network. Youth athlete mental health and the Crisis Text Line-MLB Partnership.',
     tier: 'Tier 1',
     featured: true,
   },
@@ -113,7 +113,7 @@ export const FEATURED_MEDIA: MediaEntry[] = [
     city: 'Los Angeles, CA',
     url: 'https://www.latimes.com/lifestyle/story/2026-03-25/gen-z-loneliness-social-media-tips',
     description:
-      'Primary expert source on the Gen Z loneliness crisis. Clinical context and CTL data on isolation trends.',
+      'Primary expert source on the Gen Z loneliness crisis. Clinical context and Crisis Text Line data on isolation trends.',
     tier: 'Tier 1',
     featured: true,
   },
@@ -169,7 +169,7 @@ export const FEATURED_MEDIA: MediaEntry[] = [
     city: 'National',
     url: 'https://www.cnn.com/2023/04/17/health/mass-shootings-mental-health/',
     description:
-      'Extensively quoted on the mental health toll of gun violence and mass tragedy. People reach out to CTL "to establish a sense of stability and calm" after mass tragedies.',
+      'Extensively quoted on the mental health toll of gun violence and mass tragedy. People reach out to Crisis Text Line "to establish a sense of stability and calm" after mass tragedies.',
     tier: 'Tier 1',
     featured: true,
   },
@@ -184,7 +184,7 @@ export const FEATURED_MEDIA: MediaEntry[] = [
     city: 'New York, NY',
     url: 'https://www.wnycstudios.org/podcasts/bl/episodes/the-brian-lehrer-show-2024-11-04',
     description:
-      'Live on-air with WNYC\'s flagship political and cultural program on election stress and CTL resources.',
+      'Live on-air with WNYC\'s flagship political and cultural program on election stress and Crisis Text Line resources.',
     tier: 'Tier 1',
     featured: true,
   },
