@@ -84,9 +84,9 @@ export default function Contact() {
         {/* FORM */}
         <section className="section-pad" style={{ position: 'relative', zIndex: 2 }}>
         <div className="mx-auto px-6" style={{ maxWidth: '72rem' }}>
-          <div className="grid md:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
             {/* Left: context */}
-            <div style={{ marginTop: '-192px' }}>
+            <div className="md:mt-[-192px]">
               <p className="eyebrow mb-6" style={{ color: '#D18A5E' }}>Inquiry Types</p>
               <div className="flex flex-col gap-6">
                 {[
@@ -169,7 +169,7 @@ export default function Contact() {
                           aria-checked={type === t}
                           onClick={() => setType(t)}
                           style={{
-                            padding: '0.5rem 1.25rem',
+                            padding: '0.75rem 1.25rem',
                             border: '1px solid',
                             borderColor: type === t ? '#C17A56' : 'rgba(255,255,255,0.2)',
                             backgroundColor: type === t ? '#C17A56' : 'transparent',

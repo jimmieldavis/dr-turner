@@ -216,8 +216,8 @@ export default function RotatingSpotlight() {
                       onClick={handler}
                       aria-label={label}
                       style={{
-                        width: '2rem',
-                        height: '2rem',
+                        width: '2.75rem',
+                        height: '2.75rem',
                         border: '1px solid rgba(255,255,255,0.18)',
                         background: 'transparent',
                         color: 'rgba(255,255,255,0.6)',

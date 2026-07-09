@@ -200,7 +200,7 @@ export default function About() {
             {CAREER.map((item, i) => (
               <div
                 key={i}
-                className="grid md:grid-cols-3 gap-4 items-start"
+                className="grid grid-cols-1 md:grid-cols-3 gap-4 items-start"
                 style={{ paddingBottom: '2rem', borderBottom: '1px solid rgba(255,255,255,0.1)' }}
               >
                 <div>
@@ -228,7 +228,7 @@ export default function About() {
 {/* EDUCATION + TOPICS: navy */}
       <section style={{ backgroundColor: '#1B2B4B', padding: '2rem clamp(1.5rem, 6vw, 4rem)' }}>
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
               <p className="eyebrow mb-8" style={{ color: 'rgba(255,255,255,0.65)' }}>Education</p>
               <ul className="flex flex-col gap-4">

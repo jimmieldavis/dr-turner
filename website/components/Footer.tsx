@@ -39,7 +39,7 @@ export default function Footer() {
       {/* Main footer */}
       <div style={{ backgroundColor: '#1B2B4B' }} className="text-white">
         <div className="mx-auto px-6 py-16" style={{ maxWidth: '72rem' }}>
-          <div className="grid md:grid-cols-3 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
             {/* Brand column */}
             <div>
               <p

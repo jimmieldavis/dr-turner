@@ -68,7 +68,7 @@ export default function Media() {
               <div key={stat.label}>
                 <p
                   className="font-serif"
-                  style={{ fontSize: '2.5rem', color: '#D18A5E', lineHeight: 1, fontWeight: 700 }}
+                  style={{ fontSize: 'clamp(1.75rem, 6vw, 2.5rem)', color: '#D18A5E', lineHeight: 1, fontWeight: 700 }}
                 >
                   {stat.num}
                 </p>
@@ -256,7 +256,6 @@ export default function Media() {
                         fontSize: '0.9375rem',
                         color: '#fff',
                         letterSpacing: '0.04em',
-                        whiteSpace: 'nowrap',
                       }}
                     >
                       {metaParts.join('  |  ')}

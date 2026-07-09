@@ -225,7 +225,7 @@ export default function Speaking() {
                   borderBottom: '1px solid rgba(255,255,255,0.07)',
                 }}
               >
-                <div className="grid md:grid-cols-[1.9fr_1.5fr_170px] gap-8 md:gap-14 items-start">
+                <div className="grid grid-cols-1 md:grid-cols-[1.9fr_1.5fr_170px] gap-8 md:gap-14 items-start">
                   <div>
                     <h2
                       className="font-serif mb-3"
@@ -310,7 +310,7 @@ export default function Speaking() {
       {/* FORMATS + PAST STAGES: navy */}
       <section style={{ backgroundColor: '#0D1B2A', padding: '2rem clamp(1.5rem, 6vw, 4rem)' }}>
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
               <p className="eyebrow mb-8" style={{ color: 'rgba(255,255,255,0.65)' }}>Formats</p>
               <div className="flex flex-col gap-6">

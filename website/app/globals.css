@@ -305,6 +305,7 @@ h1, h2, h3, h4 {
 @media (max-width: 640px) {
   .spotlight-portrait-grid {
     flex-direction: column-reverse !important;
+    height: auto !important;
   }
   .spotlight-portrait-grid > div:last-child {
     width: 100% !important;

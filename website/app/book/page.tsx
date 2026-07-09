@@ -179,7 +179,7 @@ export default function Book() {
       <section style={{ backgroundColor: '#0D1B2A', padding: '2rem clamp(1.5rem, 6vw, 4rem)' }}>
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <h2 className="eyebrow mb-10" style={{ color: 'rgba(255,255,255,0.65)' }}>Who This Book Is For</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 who: 'Parents',

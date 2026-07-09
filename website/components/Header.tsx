@@ -27,7 +27,7 @@ export default function Header() {
         <Link
           href="/"
           className="font-serif"
-          style={{ color: '#fff', textDecoration: 'none', fontSize: '2rem', fontWeight: 400, letterSpacing: 'normal' }}
+          style={{ color: '#fff', textDecoration: 'none', fontSize: 'clamp(1.375rem, 5vw, 2rem)', fontWeight: 400, letterSpacing: 'normal' }}
         >
           Dr. Shairi Turner
         </Link>
@@ -76,7 +76,8 @@ export default function Header() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="md:hidden flex flex-col items-center justify-center gap-1.5"
+          style={{ minWidth: '44px', minHeight: '44px' }}
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
           aria-expanded={open}
