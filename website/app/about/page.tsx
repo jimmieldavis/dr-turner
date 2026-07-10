@@ -41,16 +41,16 @@ const EDUCATION = [
 ]
 
 const TOPICS = [
-  'Youth mental health crisis',
-  'Suicide prevention and crisis intervention',
-  'Trauma-informed care',
-  'Mental health in juvenile justice',
-  'Black physician experience and health equity',
-  'Parenting and family resilience',
-  "Social media's impact on youth",
-  'Athlete mental health',
-  'Holiday and seasonal stress',
-  'Bullying, doomscrolling, war-news anxiety',
+  'Youth Mental Health Crisis',
+  'Suicide Prevention and Crisis Intervention',
+  'Trauma-Informed Care',
+  'Mental Health in Juvenile Justice',
+  'Black Physician Experience and Health Equity',
+  'Parenting and Family Resilience',
+  "Social Media's Impact on Youth",
+  'Athlete Mental Health',
+  'Holiday and Seasonal Stress',
+  'Bullying, Doomscrolling, War-News Anxiety',
 ]
 
 export default function About() {
@@ -101,7 +101,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* BIO: full-width text — dark background */}
+      {/* BIO: full-width text, dark background */}
       <section style={{ backgroundColor: '#0D1B2A', padding: '2.5rem clamp(1.5rem, 6vw, 4rem) 2rem' }}>
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <div>
@@ -136,8 +136,8 @@ export default function About() {
                 She came to Crisis Text Line the way she has arrived at every pivotal
                 juncture: through a conversation she wasn&apos;t expecting, in which a
                 Stanford classmate described a crisis service where anyone in the dark
-                could reach a trained counselor — no phone call, no waiting room, no
-                insurance card — and something in her lit up, not as a slow warming
+                could reach a trained counselor: no phone call, no waiting room, no
+                insurance card. Something in her lit up, not as a slow warming
                 but as an ignition.
               </p>
 

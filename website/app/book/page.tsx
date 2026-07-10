@@ -34,11 +34,11 @@ export default function Book() {
             flexWrap: 'wrap',
           }}
         >
-          {/* Cover image — full, uncropped */}
+          {/* Cover image: full, uncropped */}
           <div style={{ flexShrink: 0, width: 'clamp(220px, 48%, 580px)', maxWidth: '100%' }}>
             <Image
               src="/images/uncertainty-hope-cover-design-07.png"
-              alt="Uncertainty and Hope Can Coexist — book cover"
+              alt="Uncertainty and Hope Can Coexist: book cover"
               width={1024}
               height={1024}
               priority
@@ -107,7 +107,7 @@ export default function Book() {
 
         <div className="mx-auto" style={{ maxWidth: '72rem', position: 'relative', zIndex: 1 }}>
           <div>
-            {/* Text — full width */}
+            {/* Text: full width */}
             <div>
               <p className="eyebrow mb-6" style={{ color: '#D18A5E' }}>About the Book</p>
 
@@ -121,11 +121,11 @@ export default function Book() {
                 }}
               >
                 There is a particular kind of steadiness required when someone texts
-                you at 2 a.m. because they have nowhere else to go. Dr. Shairi Turner
+                you at 2 A.M. because they have nowhere else to go. Dr. Shairi Turner
                 has been building the infrastructure for that steadiness her entire career.
               </p>
 
-              <p style={{ fontSize: '1.0625rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.6)', marginBottom: '1.5rem' }}>
+              <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.6)', marginBottom: '1.5rem' }}>
                 This is a book about uncertainty, held honestly. About a Bronx-raised
                 girl who went to Fieldston, Stanford, Mass General, and Harvard, and then
                 chose the hardest rooms anyway. About building a healthcare system for
@@ -133,7 +133,7 @@ export default function Book() {
                 About watching a field she loves struggle to reach the people who need it most.
               </p>
 
-              <p style={{ fontSize: '1.0625rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.6)', marginBottom: '2.5rem' }}>
+              <p style={{ fontSize: '1.125rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.6)', marginBottom: '2.5rem' }}>
                 And it is a book about hope, held with equal honesty. Because hope
                 that pretends uncertainty does not exist is not hope. It is avoidance.
                 Dr. Turner has spent her career refusing to look away. This book is

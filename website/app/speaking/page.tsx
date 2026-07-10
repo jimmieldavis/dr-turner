@@ -13,7 +13,7 @@ const TOPICS = [
   {
     title: 'Youth Mental Health: What the Data Cannot Capture',
     description:
-      'Dr. Turner has sat with the numbers longer than almost anyone in this field. 70 percent of Crisis Text Line texters are under 24. But no data point explains the seventh-grader who texts at 2 a.m. because she has nowhere else to go. This keynote holds both: the scope of the crisis and the singular human moment inside it.',
+      'Dr. Turner has sat with the numbers longer than almost anyone in this field. 70 percent of Crisis Text Line texters are under 24. But no data point explains the seventh-grader who texts at 2 A.M. because she has nowhere else to go. This keynote holds both: the scope of the crisis and the singular human moment inside it.',
     audiences: ['Healthcare Systems', 'Educational Institutions', 'Parent & Family Organizations', 'Policy Forums'],
     exemplar: {
       outlet: 'NBC Meet the Press',
@@ -69,7 +69,7 @@ const TOPICS = [
   {
     title: 'The Physician Who Chose the Hard Room',
     description:
-      'A career retrospective for medical and public health audiences. What happens when you have every credential the field offers and choose to use them in the least comfortable places? Dr. Turner traces her arc from Mass General to juvenile justice to Crisis Text Line and makes the case that excellence belongs in the hardest rooms, not just the most prestigious ones.',
+      'A career retrospective for medical and public health audiences. What happens when you have every credential the field offers and choose to use them in the least comfortable places? Dr. Turner traces her arc from Mass General Hospital to Juvenile Justice & Public Health in the State of Florida to Crisis Text Line and makes the case that excellence belongs in the hardest rooms, not just the most prestigious ones.',
     audiences: ['Medical Schools & Residency Programs', 'Public Health Graduate Programs', 'Physician & Clinician Audiences', 'HBCU Leadership Conferences'],
     exemplar: {
       outlet: 'Harvard Medical School / CFF',

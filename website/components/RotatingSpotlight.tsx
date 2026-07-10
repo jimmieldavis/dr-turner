@@ -111,7 +111,7 @@ export default function RotatingSpotlight() {
           margin: '0 auto',
         }}
       >
-        {/* LEFT: text panel — max-width closes the gap with the video */}
+        {/* LEFT: text panel, max-width closes the gap with the video */}
         <div
           style={{
             flex: '1 1 0',
@@ -186,7 +186,7 @@ export default function RotatingSpotlight() {
             </footer>
           </blockquote>
 
-          {/* Controls — hidden when only one slide */}
+          {/* Controls: hidden when only one slide */}
           {SLIDES.length > 1 && (
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginTop: '0.5rem' }}>
               <div style={{ display: 'flex', gap: '0.375rem', alignItems: 'center' }}>
@@ -278,7 +278,7 @@ export default function RotatingSpotlight() {
         </div>
       </div>
 
-      {/* Progress bar — hidden when only one slide */}
+      {/* Progress bar: hidden when only one slide */}
       {SLIDES.length > 1 && !paused && (
         <div
           key={`progress-${current}`}

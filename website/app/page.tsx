@@ -155,7 +155,7 @@ export default function Home() {
 
       {/* ─── OUTLET STRIP: scrolling marquee ─── */}
       <section style={{ position: 'relative', overflow: 'hidden', padding: '2.5rem 0' }}>
-        {/* Background image — scaled down to reduce head prominence */}
+        {/* Background image: scaled down to reduce head prominence */}
         <Image
           src="/images/speaking-audience.jpg"
           alt=""
