@@ -126,8 +126,8 @@ export default function Header() {
                 textTransform: 'uppercase',
                 color: 'rgba(255,255,255,0.65)',
                 textDecoration: 'none',
-                paddingTop: '0.5rem',
-                paddingBottom: '0.5rem',
+                paddingTop: '0.9375rem',
+                paddingBottom: '0.9375rem',
                 display: 'block',
                 transition: 'color 0.2s',
               }}

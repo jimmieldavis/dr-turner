@@ -35,7 +35,7 @@ export default function Book() {
           }}
         >
           {/* Cover image — full, uncropped */}
-          <div style={{ flexShrink: 0, width: 'clamp(360px, 48%, 580px)' }}>
+          <div style={{ flexShrink: 0, width: 'clamp(220px, 48%, 580px)', maxWidth: '100%' }}>
             <Image
               src="/images/uncertainty-hope-cover-design-07.png"
               alt="Uncertainty and Hope Can Coexist — book cover"

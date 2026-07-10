@@ -243,7 +243,7 @@ export default function Speaking() {
                     </p>
                     <ul className="flex flex-col gap-1">
                       {topic.audiences.map((a, j) => (
-                        <li key={j} style={{ fontSize: '1.0625rem', color: 'rgba(255,255,255,0.65)', whiteSpace: 'nowrap' }}>
+                        <li key={j} className="md:whitespace-nowrap" style={{ fontSize: '1.0625rem', color: 'rgba(255,255,255,0.65)' }}>
                           {a}
                         </li>
                       ))}
