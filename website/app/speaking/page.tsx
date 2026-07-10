@@ -159,7 +159,7 @@ export default function Speaking() {
           alt="Dr. Shairi Turner speaking at a roundtable discussion with fellow panelists"
           fill
           priority
-          style={{ objectFit: 'cover', objectPosition: 'left top' }}
+          style={{ objectFit: 'cover', objectPosition: '15% top' }}
         />
         <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(10,18,35,0.15) 0%, rgba(10,18,35,0.45) 50%, rgba(10,18,35,0.75) 100%)', zIndex: 0 }} />
         <div

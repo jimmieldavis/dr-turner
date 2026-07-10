@@ -33,29 +33,38 @@ export default function Contact() {
 
   return (
     <>
-      {/* TRIPTYCH WRAPPER: spans hero + form sections */}
-      <div style={{ position: 'relative', overflow: 'hidden' }}>
-        {/* Background */}
+      {/* Outer wrapper: shared photo spans hero + form on desktop (md+); mobile falls back to flat navy and each section gets its own scoped image */}
+      <div style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#0D1B2A' }}>
         <Image
           src="/images/drturner_sparkly_ad.png"
           alt="Dr. Shairi Turner smiling in a formal black evening gown at an event"
           fill
           priority
+          className="hidden md:block"
           style={{ objectFit: 'cover', objectPosition: '25% top' }}
         />
-        {/* Single unified overlay across both sections */}
-        <div style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(10,18,35,0.65)', zIndex: 1 }} />
+        <div className="hidden md:block" style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(10,18,35,0.65)', zIndex: 1 }} />
 
         {/* PAGE HEADER */}
         <section
           style={{
             position: 'relative',
+            overflow: 'hidden',
             zIndex: 2,
             minHeight: '100vh',
             display: 'flex',
             alignItems: 'flex-start',
           }}
         >
+          <Image
+            src="/images/drturner_sparkly_ad.png"
+            alt="Dr. Shairi Turner smiling in a formal black evening gown at an event"
+            fill
+            priority
+            className="md:hidden"
+            style={{ objectFit: 'cover', objectPosition: '25% top' }}
+          />
+          <div className="md:hidden" style={{ position: 'absolute', inset: 0, backgroundColor: 'rgba(10,18,35,0.65)', zIndex: 0 }} />
           <div
             className="mx-auto"
             style={{
