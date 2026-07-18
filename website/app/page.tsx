@@ -6,8 +6,107 @@ import BookingBanner from '@/components/BookingBanner'
 export default function Home() {
   return (
     <>
-      {/* ─── SHARED HEADSHOT BACKGROUND: hero + quote + speaking ─── */}
-      <div style={{ position: 'relative', overflow: 'hidden' }}>
+      {/* ─── MOBILE HERO: full image visible, never cropped, text stacked below ─── */}
+      <div className="md:hidden" style={{ backgroundColor: '#0D1B2A' }}>
+        <Image
+          src="/images/drturner_headshot-2.jpg"
+          alt="Dr. Shairi Turner smiling in a close-up portrait"
+          width={1057}
+          height={1213}
+          priority
+          style={{ width: '100%', height: 'auto', display: 'block' }}
+        />
+        <div style={{ padding: '2.5rem clamp(1.5rem, 6vw, 4rem) 3rem' }}>
+          <p className="eyebrow mb-4" style={{ color: '#D18A5E' }}>
+            Physician &nbsp;|&nbsp; Advocate &nbsp;|&nbsp; Author
+          </p>
+          <h1
+            className="font-serif"
+            style={{
+              fontSize: 'clamp(2.5rem, 10vw, 3rem)',
+              color: '#fff',
+              lineHeight: 1.0,
+              fontWeight: 700,
+              letterSpacing: '-0.02em',
+              marginBottom: '1.5rem',
+            }}
+          >
+            Dr. Shairi<br />
+            <span style={{ fontWeight: 400, fontStyle: 'italic' }}>Turner</span>
+          </h1>
+          <p
+            style={{
+              fontSize: '1rem',
+              lineHeight: '1.75',
+              color: 'rgba(255,255,255,0.75)',
+              marginBottom: '2rem',
+            }}
+          >
+            One of the most visible physician voices on youth mental health in national media.
+          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', alignItems: 'stretch' }}>
+            <Link
+              href="/about"
+              style={{
+                display: 'block',
+                textAlign: 'center',
+                backgroundColor: 'transparent',
+                color: '#fff',
+                border: '1px solid rgba(255,255,255,0.4)',
+                padding: '1rem 2.25rem',
+                fontSize: '0.8125rem',
+                fontWeight: 500,
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+              }}
+            >
+              Her Story
+            </Link>
+            <Link
+              href="/speaking#spotlight"
+              style={{
+                display: 'block',
+                textAlign: 'center',
+                backgroundColor: 'transparent',
+                color: '#fff',
+                border: '1px solid rgba(255,255,255,0.4)',
+                padding: '1rem 2.25rem',
+                fontSize: '0.8125rem',
+                fontWeight: 500,
+                letterSpacing: '0.08em',
+                textTransform: 'uppercase',
+                textDecoration: 'none',
+              }}
+            >
+              Zac Clark Clip
+            </Link>
+          </div>
+        </div>
+        <div style={{ padding: '0 clamp(1.5rem, 6vw, 4rem) 2.5rem', borderTop: '1px solid rgba(255,255,255,0.08)', paddingTop: '2.5rem' }}>
+          <p
+            className="font-serif"
+            style={{
+              fontSize: '1.5rem',
+              color: '#fff',
+              fontStyle: 'italic',
+              fontWeight: 400,
+              lineHeight: 1.25,
+            }}
+          >
+            &ldquo;Uncertainty and hope can coexist.&rdquo;
+          </p>
+          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.875rem', letterSpacing: '0.08em', fontWeight: 500, marginTop: '1rem' }}>
+            Dr. Shairi Turner
+          </p>
+          <p style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.8125rem', letterSpacing: '0.04em', fontStyle: 'italic', marginTop: '0.2rem' }}>
+            Author, Uncertainty and Hope Can Coexist
+          </p>
+        </div>
+      </div>
+
+      {/* ─── DESKTOP: SHARED HEADSHOT BACKGROUND: hero + quote + speaking ─── */}
+      <div className="hidden md:block" style={{ position: 'relative', overflow: 'hidden' }}>
         <Image
           src="/images/drturner_headshot-2.jpg"
           alt="Dr. Shairi Turner smiling in a close-up portrait"

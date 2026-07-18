@@ -56,13 +56,41 @@ const TOPICS = [
 export default function About() {
   return (
     <>
-      {/* PAGE HEADER: full-bleed photo hero */}
+      {/* MOBILE PAGE HEADER: full image visible, never cropped, text stacked below */}
+      <div className="md:hidden" style={{ backgroundColor: '#0D1B2A' }}>
+        <Image
+          src="/images/zac-clark-frames/frame_0502-2.png"
+          alt="Dr. Shairi Turner speaking and gesturing during a podcast recording"
+          width={1280}
+          height={720}
+          priority
+          style={{ width: '100%', height: 'auto', display: 'block' }}
+        />
+        <div style={{ padding: '2.5rem clamp(1.5rem, 6vw, 4rem) 3rem' }}>
+          <p className="eyebrow mb-4" style={{ color: '#D18A5E' }}>
+            About
+          </p>
+          <h1
+            className="font-serif"
+            style={{
+              fontSize: 'clamp(2.25rem, 8vw, 2.75rem)',
+              color: '#fff',
+              lineHeight: 1.1,
+            }}
+          >
+            She didn&apos;t plan this career.<br />
+            <span style={{ fontStyle: 'italic', fontWeight: 400 }}>She followed it.</span>
+          </h1>
+        </div>
+      </div>
+
+      {/* DESKTOP PAGE HEADER: full-bleed photo hero */}
       <section
+        className="hidden md:flex"
         style={{
           position: 'relative',
           overflow: 'hidden',
           minHeight: '100vh',
-          display: 'flex',
           alignItems: 'flex-end',
         }}
       >
