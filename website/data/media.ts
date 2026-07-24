@@ -14,7 +14,7 @@ export type MediaEntry = {
 
 // Featured Tier 1 entries surfaced on the website
 // Ordered by Tier then impact: Tier 1+ → national TV → national print → radio → academic → conference → keynote → advisory
-// Full dataset of 217 entries lives at: https://jimmieldavis.github.io/dr-turner-media/
+// Full dataset of 221 entries lives at: https://jimmieldavis.github.io/dr-turner-media/ (source of truth: sources/tracker/DrTurnerMediaTracker_v7.jsx; this count is hardcoded across the site and must be updated manually when the tracker changes)
 export const FEATURED_MEDIA: MediaEntry[] = [
   // --- Tier 1+ ---
   {
@@ -188,6 +188,21 @@ export const FEATURED_MEDIA: MediaEntry[] = [
     tier: 'Tier 1',
     featured: true,
   },
+  // --- Tier 1 | Keynote / Conference ---
+  {
+    id: 221,
+    title: 'Maintaining Hope in Times of Uncertainty (Closing Keynote)',
+    outlet: 'The Allstate Foundation',
+    type: 'Keynote',
+    date: '2026-07-23',
+    year: 2026,
+    city: 'Chicago, IL',
+    url: '',
+    description:
+      "Closing Keynote at The Allstate Foundation's Relationship Abuse/Partner Violence Convening. On Faith, Fortitude, and Flexibility as pillars of Hope for anti-violence advocates and providers.",
+    tier: 'Tier 1',
+    featured: true,
+  },
 ]
 
 // Outlet logos/names for credibility strip (Tier 1 placements)
@@ -205,4 +220,5 @@ export const OUTLET_STRIP = [
   'Forbes',
   'EBONY',
   'Essence',
+  'The Allstate Foundation',
 ]

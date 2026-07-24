@@ -6,7 +6,7 @@ import BookingBanner from '@/components/BookingBanner'
 export const metadata = {
   title: 'Media | Dr. Shairi Turner',
   description:
-    '217 media engagements. NBC, CBS, MLB Network, TIME, USA Today, NYT, Harvard, Axios, EBONY, Essence, Forbes.',
+    '221 media engagements. NBC, CBS, MLB Network, TIME, USA Today, NYT, Harvard, Axios, EBONY, Essence, Forbes.',
 }
 
 export default function Media() {
@@ -86,7 +86,7 @@ export default function Media() {
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { num: '217', label: 'Catalogued engagements' },
+              { num: '221', label: 'Catalogued engagements' },
               { num: '12.4M', label: 'Impressions, one 2024 tour' },
               { num: '49', label: 'Outlets, Live Free 999 SMT' },
               { num: '366', label: 'Secured airings, LF999' },
@@ -111,7 +111,7 @@ export default function Media() {
       <section style={{ backgroundColor: '#C17A56', padding: '1.25rem 1.5rem' }}>
         <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-4" style={{ maxWidth: '72rem' }}>
           <p style={{ color: '#fff', fontSize: '1.0625rem' }}>
-            The interactive archive with all 217 entries, filters, and a geographic map is live at the media tracker.
+            The interactive archive with all 221 entries, filters, and a geographic map is live at the media tracker.
           </p>
           <a
             href="https://jimmieldavis.github.io/dr-turner-media/"
@@ -186,6 +186,7 @@ export default function Media() {
                 'Children\'s Miracle Network': 'cmn.svg',
                 'HLTH': 'hlth.svg',
                 'Live Free 999': 'livefree999.svg',
+                'Allstate Foundation': 'allstate-foundation.png',
               }
               const SOURCE_URLS: Record<string, string> = {
                 'CBS News': 'https://www.cbsnews.com/newyork/video/how-constant-war-coverage-is-fueling-stress-and-anxiety/',
@@ -214,6 +215,7 @@ export default function Media() {
                 'famu.svg': 29, 'fsu.svg': 29,
                 'forbes-magazine.png': 21, 'ebony.png': 21, 'essence.png': 21,
                 'meet-the-press.png': 39, 'livefree999.svg': 62,
+                'allstate-foundation.png': 29,
               }
               const logoHeight = logoFile ? (LOGO_HEIGHTS[logoFile] ?? 29) : 29
 

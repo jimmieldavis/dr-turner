@@ -193,7 +193,7 @@ export default function About() {
               </blockquote>
 
               <p style={{ fontSize: '1.0625rem', lineHeight: '1.8', color: 'rgba(255,255,255,0.65)' }}>
-                Her media footprint spans 217 catalogued engagements: NBC Meet the
+                Her media footprint spans 221 catalogued engagements: NBC Meet the
                 Press, CBS News, MLB Network, CNN, TIME, USA Today, the New York
                 Times, the Los Angeles Times, WNYC, Harvard, Axios, EBONY, Essence.
                 A single 2024 satellite media tour generated 12.4 million impressions

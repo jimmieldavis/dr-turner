@@ -289,6 +289,7 @@ export default function Home() {
             { name: "Children's Miracle Network", file: 'cmn.svg',           h: 42 },
             { name: 'FAMU',                 file: 'famu.svg',                 h: 36 },
             { name: 'FSU',                  file: 'fsu.svg',                  h: 36 },
+            { name: 'The Allstate Foundation', file: 'allstate-foundation.png', h: 32 },
           ]
           const logoItem = (item: typeof MARQUEE_LOGOS[0], idx: number) => (
             // eslint-disable-next-line @next/next/no-img-element
@@ -318,7 +319,7 @@ export default function Home() {
         })()}
         <div style={{ textAlign: 'center', marginTop: '1.25rem' }}>
           <Link href="/media" style={{ fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#D18A5E', textDecoration: 'none' }}>
-            View Full Media Archive (217) &rarr;
+            View Full Media Archive (221) &rarr;
           </Link>
         </div>
         </div>{/* /content */}

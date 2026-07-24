@@ -97,7 +97,7 @@ const FORMATS = [
   },
   {
     label: 'Media / Press',
-    detail: 'Broadcast, print, podcast, radio. 217 engagements and counting.',
+    detail: 'Broadcast, print, podcast, radio. 221 engagements and counting.',
   },
   {
     label: 'Workshop',

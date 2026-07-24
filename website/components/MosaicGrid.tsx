@@ -22,6 +22,7 @@ const LOGO_MAP: Record<string, string> = {
   "Children's Miracle Network": 'cmn.svg',
   'HLTH':               'hlth.svg',
   'Live Free 999':      'livefree999.svg',
+  'Allstate Foundation': 'allstate-foundation.png',
 }
 
 function getLogoFile(outlet: string): string | null {
@@ -244,7 +245,7 @@ export default function MosaicGrid() {
               alignSelf: 'flex-end',
             }}
           >
-            Full archive (217) &rarr;
+            Full archive (221) &rarr;
           </a>
         </div>
 
