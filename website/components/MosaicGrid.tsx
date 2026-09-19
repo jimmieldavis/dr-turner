@@ -1,4 +1,5 @@
 import { FEATURED_MEDIA, type MediaEntry } from '@/data/media'
+import { TRACKER_COUNT } from '@/data/trackerStats'
 
 // Maps outlet name fragments to logo files in public/images/logos/
 const LOGO_MAP: Record<string, string> = {
@@ -245,7 +246,7 @@ export default function MosaicGrid() {
               alignSelf: 'flex-end',
             }}
           >
-            Full archive (221) &rarr;
+            Full archive ({TRACKER_COUNT}) &rarr;
           </a>
         </div>
 

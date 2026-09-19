@@ -14,7 +14,9 @@ export type MediaEntry = {
 
 // Featured Tier 1 entries surfaced on the website
 // Ordered by Tier then impact: Tier 1+ → national TV → national print → radio → academic → conference → keynote → advisory
-// Full dataset of 221 entries lives at: https://jimmieldavis.github.io/dr-turner-media/ (source of truth: sources/tracker/DrTurnerMediaTracker_v7.jsx; this count is hardcoded across the site and must be updated manually when the tracker changes)
+// Full dataset lives at: https://jimmieldavis.github.io/dr-turner-media/ (source of truth:
+// sources/tracker/DrTurnerMediaTracker_v7.jsx). The total is NO LONGER hardcoded: it is
+// generated into data/trackerStats.ts by the MTI deploy step. Import TRACKER_COUNT from there.
 export const FEATURED_MEDIA: MediaEntry[] = [
   // --- Tier 1+ ---
   {

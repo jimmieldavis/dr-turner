@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { OUTLET_STRIP } from '@/data/media'
 import BookingBanner from '@/components/BookingBanner'
+import { TRACKER_COUNT } from '@/data/trackerStats'
 
 export default function Home() {
   return (
@@ -319,7 +320,7 @@ export default function Home() {
         })()}
         <div style={{ textAlign: 'center', marginTop: '1.25rem' }}>
           <Link href="/media" style={{ fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#D18A5E', textDecoration: 'none' }}>
-            View Full Media Archive (221) &rarr;
+            View Full Media Archive ({TRACKER_COUNT}) &rarr;
           </Link>
         </div>
         </div>{/* /content */}

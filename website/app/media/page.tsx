@@ -2,11 +2,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FEATURED_MEDIA } from '@/data/media'
 import BookingBanner from '@/components/BookingBanner'
+import { TRACKER_COUNT } from '@/data/trackerStats'
 
 export const metadata = {
   title: 'Media | Dr. Shairi Turner',
   description:
-    '221 media engagements. NBC, CBS, MLB Network, TIME, USA Today, NYT, Harvard, Axios, EBONY, Essence, Forbes.',
+    `${TRACKER_COUNT} media engagements. NBC, CBS, MLB Network, TIME, USA Today, NYT, Harvard, Axios, EBONY, Essence, Forbes.`,
 }
 
 export default function Media() {
@@ -86,7 +87,7 @@ export default function Media() {
         <div className="mx-auto" style={{ maxWidth: '72rem' }}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { num: '221', label: 'Catalogued engagements' },
+              { num: String(TRACKER_COUNT), label: 'Catalogued engagements' },
               { num: '12.4M', label: 'Impressions, one 2024 tour' },
               { num: '49', label: 'Outlets, Live Free 999 SMT' },
               { num: '366', label: 'Secured airings, LF999' },
@@ -111,7 +112,7 @@ export default function Media() {
       <section style={{ backgroundColor: '#C17A56', padding: '1.25rem 1.5rem' }}>
         <div className="mx-auto flex flex-col md:flex-row items-center justify-between gap-4" style={{ maxWidth: '72rem' }}>
           <p style={{ color: '#fff', fontSize: '1.0625rem' }}>
-            The interactive archive with all 221 entries, filters, and a geographic map is live at the media tracker.
+            The interactive archive with all {TRACKER_COUNT} entries, filters, and a geographic map is live at the media tracker.
           </p>
           <a
             href="https://jimmieldavis.github.io/dr-turner-media/"

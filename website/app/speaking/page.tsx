@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import BookingBanner from '@/components/BookingBanner'
 import RotatingSpotlight from '@/components/RotatingSpotlight'
+import { TRACKER_COUNT } from '@/data/trackerStats'
 
 export const metadata = {
   title: 'Speaking | Dr. Shairi Turner',
@@ -97,7 +98,7 @@ const FORMATS = [
   },
   {
     label: 'Media / Press',
-    detail: 'Broadcast, print, podcast, radio. 221 engagements and counting.',
+    detail: `Broadcast, print, podcast, radio. ${TRACKER_COUNT} engagements and counting.`,
   },
   {
     label: 'Workshop',
